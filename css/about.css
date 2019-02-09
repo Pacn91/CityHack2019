@@ -1,0 +1,32 @@
+#about {
+  margin: 2rem 0;
+}
+#about .title {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0.5rem 0 2rem 0;
+}
+#about .text_container {
+  display: flex;
+  justify-content: space-between;
+}
+#about .text_container .text_box {
+  width: 30%;
+}
+#about .text_container .text_box p {
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 700px) {
+  #about .text_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .text_container .text_box {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

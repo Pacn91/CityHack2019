@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Futura PT", sans-serif;
+  font-weight: normal;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: 70%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
