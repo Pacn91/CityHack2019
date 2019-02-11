@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/cronologia.css" />
 
     <!-- JavaScript =========================================== -->
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/afterglow.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Livereload =========================================== -->
@@ -26,58 +28,131 @@
   </head>
   <body>
     <navbar id="navbar">
-      <ul class="menu">
-        <li>Edição 2019 <i class="fas fa-angle-down"></i>
-          <ul class="sub_menu">
-            <li>The Challenges</li>
-            <li>Ideation</li>
-            <li>Hackathon</li>
-            <li>Bootcamp</li>
-            <li>Websumit</li>
-            <li>Incubation</li>
-          </ul>
-        </li>
-        <li>Sobre nós</li>
-        <li>Edições anteriores</li>
-        <li>ENGLISH</li>
-      </ul>
+      <div class="navbar_wrapper">
+        <ul class="menu">
+          <li>Edição 2019 <i class="fas fa-angle-down"></i>
+            <ul class="sub_menu">
+              <li>The Challenges</li>
+              <li>Ideation</li>
+              <li>Hackathon</li>
+              <li>Bootcamp</li>
+              <li>Websumit</li>
+              <li>Incubation</li>
+            </ul>
+          </li>
+          <li>Sobre nós</li>
+          <li>Edições anteriores</li>
+          <li>ENGLISH</li>
+        </ul>
 
-      <a class="menu_toggle" href="#">
-         <span></span>
-      </a>
+        <a class="menu_toggle">
+           <span></span>
+        </a>
+      </div>
     </navbar>
 
+    <!-- Seccção do banner -->
     <section id="banner"></section>
+
+    <!-- Seccção da informação sobre o evento -->
     <section id="about">
       <div class="wrapper">
         <h1 class="title">CityHack 2019</h1>
         <div class="text_container">
           <div class="text_box">
-            <p>summis tamen quorum quae amet velit export cillum quid tempor legam legam magna
+            <p>Summis tamen quorum quae amet velit export cillum quid tempor legam legam magna
               fugiat dolore noster amet fore nisi export anim cillum cillum quorum ipsum nulla
               dolor fugiat labore tamen ipsum elit legam dolor magna fore eram nisi ipsum quid anim velit duis illum
               eram multos quis amet aliqua veniam.
+              Tamen quorum quae amet velit export cillum quid tempor legam legam magna
+              fugiat dolore noster amet fore nisi export anim cillum cillum quorum ipsum nulla
+              dolor fugiat labore tamen ipsum elit legam dolor magna fore eram nisi ipsum quid anim velit duis illum
+              eram multos quis amet aliqua veniam
             </p>
           </div>
           <div class="text_box">
-            <p>quis quorum sunt esse quorum eram ipsum anim eram legam quae veniam enim legam
+            <p>Quis quorum sunt esse quorum eram ipsum anim eram legam quae veniam enim legam
               culpa nulla amet aute sunt irure quae illum veniam ipsum amet sint quid quorum
               dolore quorum cillum dolore eram culpa eram aliqua tempor culpa malis fugiat
-              quis dolore labore anim malis legam magna aute malis fugiat.
+              quis dolore labore anim malis legam magna aute malis fugiat fugiat labore tamen ipsum
+              elit legam dolor magna fore eram nisi ipsum quid anim velit duis illum
+              eram multos quis amet aliqua veniam summis tamen quorum eram aliqua tempor culpa malis fugiat
+              quis dolore labore anim malis legam magna aute malis fugiat fugiat labore quae amet.
             </p>
           </div>
           <div class="text_box">
-            <p>quae labore ipsum ipsum fore export summis malis enim sint eram amet quis culpa
+            <p>Quae labore ipsum ipsum fore export summis malis enim sint eram amet quis culpa
               anim legam labore fugiat amet duis nulla culpa cillum summis amet sunt irure
               noster duis duis irure aute illum aliqua duis malis esse quid quis amet duis
-              amet tamen fore nulla esse multos quorum multos cillum.
+              amet tamen fore nulla esse multos quorum multos cillum legam labore fugiat amet duis nulla culpa cillum summis amet sunt irure
+              noster duis duis irure aute illum aliqua duis malis esse quid quis amet duis
+              amet tamen fore nulla esse multos quorum.
+              Legam labore fugiat amet duis nulla culpa cillum summis amet sunt irure
+              noster duis duis irure aute illum aliqua duis malis.
             </p>
           </div>
         </div>
 
       </div>
     </section>
+
+    <!-- Seccção do video do evento anterior  -->
     <section id="video">
+      <h1>Vê o vídeo do evento anterior</h1>
+      <i class="fas fa-play-circle"></i>
+      <a class="afterglow" href="#myvideo"></a>
+      <video id="myvideo" width="960" height="540">
+        <source type="video/mp4" src="./videos/CityHack_Tomar_2017.mp4" data-quality="hd"/>
+      </video>
+    </section>
+
+    <!-- Seccção da cronologia do evento -->
+    <section id="cronologia">
+      <div class="wrapper">
+        <h1>Detalhes Da Agenda do Evento</h1>
+        <div class="timeline">
+          <ul class="clearfix">
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/logo-city-hack2019.png" alt="Logo City Hack">
+                </div>
+                <div class="content_info">
+                  <span class="hora">10H00</span>
+                  <h4>Receção</h4>
+                  <small>Bem vindo ao CityHack 2019!</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/Tomar.jpg" alt="Tomar">
+                </div>
+                <div class="content_info">
+                  <span class="hora">11H00</span>
+                  <h4>Visita à cidade</h4>
+                  <small>Conheça a cidade de Tomar!</small>
+                </div>
+                <div class="arrow"></div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">15H00</span>
+                  <h4>Início HACKATHON</h4>
+                  <small>Dá tudo o que tens!</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   </body>
 </html>

@@ -1,18 +1,22 @@
 #navbar {
-  // background: rgba(white, 0.3);
+  background: rgba(black, 0);
   height: 10vh;
-  max-width: 1200px;
-  width: 70%;
-  position: absolute;
+  position: fixed;
   top:0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  width: 100%;
   font-weight: 500;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.3s ease-in-out;
-  z-index: 1;
+  transition: height 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  .navbar_wrapper{
+    max-width: 1200px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+  }
   .menu {
     list-style: none;
     li {
@@ -144,7 +148,9 @@
   }
 
   @media only screen and (max-width: 1024px){
-    width: 100vw;
+    .navbar_wrapper {
+      width: 100%;
+    }
     .menu {
       display: none;
     }
@@ -155,13 +161,14 @@
 
   &.mobile {
     position: fixed;
-    height:100vh;
+    height: 100vh;
     background: black;
-    width: 100vw;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     overflow-y: auto;
+    .navbar_wrapper{
+      justify-content: flex-start;
+    }
     .menu {
       display: block;
       padding: 2rem;
