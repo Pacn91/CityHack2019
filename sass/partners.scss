@@ -1,10 +1,52 @@
 @import "variables";
 
 #partners {
-  border-top: 2px solid $bluecolor;
+  padding: 2rem;
+  .wrapper {
+    overflow-x: hidden;
+  }
   .title{
-    font-weight: 500;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    font-weight: 400;
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 2rem;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 1000px;
+      left: 100%;
+      margin-left: 10%;
+      top: 55%;
+      background: #ccc;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 1000px;
+      right: 100%;
+      margin-right: 10%;
+      top: 55%;
+      background: #ccc;
+    }
+  }
+  .apoio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .parcerias {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      max-height: 100px;
+      margin-right: 1rem;
+    }
   }
 }
