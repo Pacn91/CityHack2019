@@ -1,30 +1,106 @@
 #about {
+  .wrapper {
+    overflow-x: hidden;
+  }
   margin:2rem 0 4rem 0;
+  @media only screen and (max-width: 800px){
+    margin-bottom: 2rem;
+  }
+  @media only screen and (max-width: 500px){
+    margin-bottom: 1rem;
+  }
   .title {
     text-align: center;
     font-size: 5rem;
     text-transform: uppercase;
-    font-weight: 500;
-    margin: 0.5rem 0 2rem 0;
+    font-weight: 400;
+    margin: 0.5rem 0 0 0;
+    @media only screen and (max-width: 900px){
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: 500px){
+      font-size: 3rem;
+    }
+    @media only screen and (max-width: 350px){
+      font-size: 2.5rem;
+    }
   }
-  .text_container{
-    display: flex;
-    justify-content: space-between;
-    .text_box{
-      width: 30%;
+  .localization{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 150%;
+      left: 100%;
+      margin-left: 10%;
+      top: 50%;
+      background: #44C8E8;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 150%;
+      right: 100%;
+      margin-right: 10%;
+      top: 50%;
+      background: #44C8E8;
+    }
+  }
+  .container {
+    position: relative;
+    .subtitle{
+      margin-top: 2rem;
+      padding: 1rem;
       p {
-        font-size: 1.2rem;
+        font-size: 2rem;
+        @media only screen and (max-width: 700px){
+          font-size: 2rem;
+        }
+        @media only screen and (max-width: 500px){
+          font-size: 1.7rem;
+        }
+      }
+    }
+    .description_left, .description_right{
+      padding: 1rem;
+      width: 49%;
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        @media only screen and (max-width: 700px){
+          font-size: 1.3rem;
+        }
+        @media only screen and (max-width: 500px){
+          font-size: 1.2rem;
+        }
       }
     }
 
-    @media only screen and (max-width: 700px){
-      flex-direction: column;
-      align-items:center;
-      .text_box{
-        width: 90%;
-        margin: 1rem 0;
+    .description_left {
+      float:left;
+    }
+    .description_right {
+      float:right;
+    }
+    @media only screen and (max-width: 800px){
+      .description_left, .description_right{
+        width: 100%;
+        float:none;
+      }
+      .description_left {
+        padding-bottom: 0;
+      }
+      .description_right {
+        padding-top: 0;
       }
     }
   }
+
+
 
 }

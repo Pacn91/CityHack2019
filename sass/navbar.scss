@@ -1,23 +1,69 @@
 #navbar {
-  background: rgba(black, 0);
-  height: 10vh;
+  // background: rgba(white, 0);
+  height: 100px;
   position: fixed;
   top:0;
   width: 100%;
   font-weight: 500;
-  transition: height 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   z-index: 1000;
-  display: flex;
-  align-items: center;
+  &.with-background {
+    background: rgba(white, 1);
+    height: 85px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    .nav_logo{
+      height: 70px;
+    }
+    .menu {
+      li {
+        color: black;
+        a {
+          color: black;
+        }
+        .sub_menu {
+          color: black;
+        }
+        &:before {
+          background: black;
+        }
+      }
+    }
+
+    .menu_toggle{
+      .label {
+        color: black;
+      }
+      span.hamburguer {
+        background-color: black;
+      }
+    }
+  }
   .navbar_wrapper{
-    max-width: 1200px;
-    width: 70%;
+    position: relative;
+    height: 100%;
+    width: 90%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     margin: 0 auto;
   }
+  .nav_logo{
+    position: absolute;
+    top:7px;
+    left:10px;
+    width: 50%;
+    height: 80px;
+    transition: height 0.15s ease-in-out;
+    img {
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      height: 80%;
+      object-fit: cover;
+    }
+  }
   .menu {
+    position: absolute;
+    right:0;
     list-style: none;
     li {
       position: relative;
@@ -25,9 +71,12 @@
       text-transform: uppercase;
       margin-right: 1rem;
       color: white;
-      padding-bottom: 0.5rem;
       cursor: pointer;
-      &:hover:first-child > .sub_menu {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:hover> .sub_menu {
         display:block;
       }
       &:last-child {
@@ -36,9 +85,9 @@
       &:before{
         content:'';
         position: absolute;
-        bottom: 0;
+        bottom: -0.3rem;
         width: 0%;
-        height: 3px;
+        height: 2px;
         background: white;
         left:50%;
         transform: translateX(-50%);
@@ -55,26 +104,16 @@
         white-space: nowrap;
         font-size: 0.8rem;
         font-weight: 400;
-        padding-top: 0.8rem;
+        padding-top: 0.4rem;
         transition: all 0.3 ease-in-out;
         li {
           display: inline-block;
-          padding-bottom: 0.3rem;
+          padding-top: 0.5rem;
           margin-bottom: 0.8rem;
           animation: sliding 0.3s ease-in-out forwards;
           &:before{
             height: 1px;
-          }
-        }
-
-        @keyframes sliding {
-          from {
-            opacity: 0;
-            transform: translateY(-20%);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0%);
+            bottom: -0.1rem;
           }
         }
       }
@@ -85,14 +124,23 @@
   .menu_toggle {
     display: none;
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 0;
+    top:24px;
     height: 42px;
     width: 42px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    // -webkit-transition: all 0.3s ease-in-out;
+    // transition: all 0.3s ease-in-out;
     text-decoration: none;
-    span {
+    .label {
+      color: white;
+      position: absolute;
+      right: 100%;
+      top:50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    span.hamburguer {
       display: block;
       width: 24px;
       height: 2px;
@@ -114,8 +162,8 @@
         background-color: inherit;
         position: absolute;
         left: 0;
-        -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
+        -webkit-transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
       }
       &:before {
         top: -9px;
@@ -124,12 +172,12 @@
         bottom: -9px;
       }
     }
-    &.is-clicked span {
-      background-color: rgba(white, 0);
+    &.is-clicked span.hamburguer {
+      background-color: rgba(black, 0);
       -webkit-transition: all 0.1s ease-in-out;
       transition: all 0.1s ease-in-out;
       &:before, &:after {
-        background-color: white;
+        background-color: black;
       }
       &:before {
         top: 0;
@@ -149,7 +197,7 @@
 
   @media only screen and (max-width: 1024px){
     .navbar_wrapper {
-      width: 100%;
+      width: 95%;
     }
     .menu {
       display: none;
@@ -162,20 +210,23 @@
   &.mobile {
     position: fixed;
     height: 100vh;
-    background: black;
-    display: flex;
-    align-items: center;
+    background: white;
     overflow-y: auto;
     .navbar_wrapper{
       justify-content: flex-start;
     }
     .menu {
+      position: absolute;
       display: block;
-      padding: 2rem;
+      padding: 1rem;
+      top: 85px;
+      left: 0;
       li {
         display: block;
         padding: 1rem 0;
         font-size: 1.2rem;
+        color: black;
+        animation: slidingLeft 0.3s ease-in-out forwards;
         &:before {
           content: none;
         }
@@ -183,6 +234,9 @@
           i {
             display: none;
           }
+        }
+        a{
+          color: black;
         }
         .sub_menu {
           display: block;
@@ -200,6 +254,34 @@
           }
         }
       }
+    }
+    .menu_toggle {
+      .label {
+        color: black;
+      }
+    }
+  }
+
+
+  @keyframes sliding {
+    from {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slidingLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
     }
   }
 }

@@ -11,92 +11,123 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/cronologia.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/partners.css" />
+    <link rel="stylesheet" href="css/prizes.css" />
+
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
 
     <!-- JavaScript =========================================== -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/afterglow.min.js"></script>
+    <script src="js/particles.min.js"></script>
     <script src="js/main.js"></script>
-
     <!-- Livereload =========================================== -->
-    <script src="http://localhost:35729/livereload.js"></script>
 
   </head>
   <body>
     <navbar id="navbar">
-      <div class="navbar_wrapper">
+      <div class="navbar_wrapper clearfix">
+        <div class="nav_logo">
+          <img id="navbar_logo" src="./images/logo-cityhack-branco.png" alt="Navbar Logo" />
+        </div>
         <ul class="menu">
-          <li>Edição 2019 <i class="fas fa-angle-down"></i>
+          <li><a href="index.html">Edição 2019 <i class="fas fa-angle-down"></i></a>
             <ul class="sub_menu">
-              <li>The Challenges</li>
+              <li>Inspiration</li>
               <li>Ideation</li>
               <li>Hackathon</li>
-              <li>Bootcamp</li>
-              <li>Websumit</li>
-              <li>Incubation</li>
+              <li>Implementation</li>
             </ul>
           </li>
-          <li>Sobre nós</li>
+          <li>Inscrições <i class="fas fa-angle-down"></i>
+            <ul class="sub_menu">
+              <li>Regulamento</li>
+              <li>Inscrições</li>
+              <li>Prémios</li>
+              <li>Teaser</li>
+            </ul>
+          </li>
+          <li><!--<a href="about.html">Sobre nós</a>-->Sobre nós</li>
+
           <li>Edições anteriores</li>
           <li>ENGLISH</li>
         </ul>
 
         <a class="menu_toggle">
-           <span></span>
+          <span class="label">MENU</span>
+          <span class="hamburguer"></span>
         </a>
       </div>
     </navbar>
 
-    <!-- Seccção do banner -->
-    <section id="banner"></section>
+    <!-- Banner -->
+    <section id="banner">
+      <div id="particles-js"></div>
+      <img src="./images/grafismo-topo-site-cityhack.png" alt="Grafismo CityHack" />
+    </section>
 
-    <!-- Seccção da informação sobre o evento -->
+    <!-- Informação sobre o evento -->
     <section id="about">
       <div class="wrapper">
         <h1 class="title">CityHack 2019</h1>
-        <div class="text_container">
-          <div class="text_box">
-            <p>Summis tamen quorum quae amet velit export cillum quid tempor legam legam magna
-              fugiat dolore noster amet fore nisi export anim cillum cillum quorum ipsum nulla
-              dolor fugiat labore tamen ipsum elit legam dolor magna fore eram nisi ipsum quid anim velit duis illum
-              eram multos quis amet aliqua veniam.
-              Tamen quorum quae amet velit export cillum quid tempor legam legam magna
-              fugiat dolore noster amet fore nisi export anim cillum cillum quorum ipsum nulla
-              dolor fugiat labore tamen ipsum elit legam dolor magna fore eram nisi ipsum quid anim velit duis illum
-              eram multos quis amet aliqua veniam
+        <span class="localization">Complexo da Levada, 11 e 12 de maio de 2019</span>
+        <div class="container clearfix">
+          <div class="subtitle">
+            <p>
+              <i>O Instituto Politécnico de Tomar e o Município de Tomar com o apoio da Fundação Calouste Gulbenkian anunciam a 3ª edição do Projeto CityHack – A cidade como uma plataforma social.</i>
             </p>
           </div>
-          <div class="text_box">
-            <p>Quis quorum sunt esse quorum eram ipsum anim eram legam quae veniam enim legam
-              culpa nulla amet aute sunt irure quae illum veniam ipsum amet sint quid quorum
-              dolore quorum cillum dolore eram culpa eram aliqua tempor culpa malis fugiat
-              quis dolore labore anim malis legam magna aute malis fugiat fugiat labore tamen ipsum
-              elit legam dolor magna fore eram nisi ipsum quid anim velit duis illum
-              eram multos quis amet aliqua veniam summis tamen quorum eram aliqua tempor culpa malis fugiat
-              quis dolore labore anim malis legam magna aute malis fugiat fugiat labore quae amet.
-            </p>
+          <div class="description_left">
+            <p>O CityHack é um evento sob a forma de maratona, com a duração de 24 horas, que visa o desenvolvimento de soluções tecnológicas para cidades. A edição de 2019 é vocacionada para soluções correspondentes a desafios com impacto social. O evento é superiormente apoiado pela Fundação Calouste Gulbenkian no âmbito do projeto Hack for Good inserido no programa Gulbenkian de Coesão e Integração Social.</p>
+
+            <p>Podem candidatar-se equipas de 3 a 6 elementos, que sejam alunos de Universidades e Institutos Politécnicos, em que pelo menos dois sejam oriundos de áreas tecnológicas. </p>
           </div>
-          <div class="text_box">
-            <p>Quae labore ipsum ipsum fore export summis malis enim sint eram amet quis culpa
-              anim legam labore fugiat amet duis nulla culpa cillum summis amet sunt irure
-              noster duis duis irure aute illum aliqua duis malis esse quid quis amet duis
-              amet tamen fore nulla esse multos quorum multos cillum legam labore fugiat amet duis nulla culpa cillum summis amet sunt irure
-              noster duis duis irure aute illum aliqua duis malis esse quid quis amet duis
-              amet tamen fore nulla esse multos quorum.
-              Legam labore fugiat amet duis nulla culpa cillum summis amet sunt irure
-              noster duis duis irure aute illum aliqua duis malis.
-            </p>
+          <div class="description_right">
+            <p>A equipa poderá incluir dois elementos que não frequentem o ensino superior.</p>
+            <p>Este projeto visa incentivar os participantes a apresentar soluções tecnológicas para a melhoria da qualidade de vida nas cidades, reconhecendo, valorizando e retendo talentos, também tendo como objetivo criar condições para a concretização das ideias geradas.</p>
+
+            <p>Não há qualquer custo de inscrição e toda a logística nas 24 horas, incluindo as refeições, estará a cargo da organização.</p>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Seccção do video do evento anterior  -->
+    <section id="prizes">
+      <div class="wrapper">
+        <h1 class="title">Prémios</h1>
+        <div class="awards">
+          <div class="awards_container left">
+            <div class="secondPlace">
+              <img src="./images/segundoLugar.png" alt="Second Place" />
+              <span class="price_money fit">1500€</span>
+              <span class="label">2º prémio</span>
+            </div>
+          </div>
+          <div class="awards_container">
+            <div class="firstPlace">
+              <img src="./images/primeiroLugar.png" alt="First Place" />
+              <span class="price_money fit">2500€</span>
+              <span class="label">1º prémio</span>
+            </div>
+          </div>
+          <div class="awards_container right">
+            <div class="thirdPlace">
+              <img src="./images/terceiroLugar.png" alt="Third Place" />
+              <span class="price_money fit">500€</span>
+              <span class="label">3º prémio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video do evento anterior  -->
     <section id="video">
       <h1>Vê o vídeo do evento anterior</h1>
       <i class="fas fa-play-circle"></i>
@@ -106,10 +137,11 @@
       </video>
     </section>
 
-    <!-- Seccção da cronologia do evento -->
-    <section id="cronologia">
+    <!-- Cronologia do evento -->
+    <section id="timeline">
       <div class="wrapper">
-        <h1>Detalhes Da Agenda do Evento</h1>
+        <h1 class="timeline_title">Detalhes Da Agenda do Evento</h1>
+        <p class="subtitle">Os horários presentes podem ser alterados caso exista alguma necessidade de ajuste ou de acordo com o regulamento.</p>
         <div class="timeline">
           <ul class="clearfix">
             <li>
@@ -154,5 +186,15 @@
         </div>
       </div>
     </section>
+
+    <!-- Parceiros -->
+    <section id="partners">
+      <div class="wrapper">
+        <h1 class="title">
+          Parceiros
+        </h1>
+      </div>
+    </section>
+
   </body>
 </html>

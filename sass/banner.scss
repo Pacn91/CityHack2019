@@ -1,6 +1,25 @@
 #banner{
-  min-height: 100vh;
-  background-image: url("../images/banner.png");
+  position: relative;
+  height: 100vh;
+  background-image: url("../images/cityhack2019-topo-fundo-site2048x1365.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 20px 0;
+  #particles-js {
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+  }
+  img {
+    height: 90%;
+    width: 90%;
+    max-height: 647px;
+    max-width: 632px;
+    object-fit: contain;
+  }
 }
