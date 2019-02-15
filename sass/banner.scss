@@ -1,13 +1,16 @@
 #banner{
   position: relative;
   height: 100vh;
-  background-image: url("../images/cityhack2019-topo-fundo-site2048x1365.png");
+  background-image: url("../images/cityhack2019-topo-fundo-site1920x1080.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px 0 20px 0;
+  @media only screen and (min-width: 1921px){
+    background-image: url("../images/cityhack2019-topo-fundo-site2048x1365.png");
+  }
   #particles-js {
     position: absolute;
     top:0;
@@ -21,5 +24,23 @@
     max-height: 647px;
     max-width: 632px;
     object-fit: contain;
+  }
+  .apoio {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    text-align: center;
+    h1 {
+      color: white;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 1024px){
+    padding-bottom: 150px;
+    .apoio{
+      right:50%;
+      transform: translateX(50%);
+    }
   }
 }

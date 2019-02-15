@@ -1,0 +1,57 @@
+@import "variables";
+
+#eventosAnteriores{
+  #lightgallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    a {
+      position: relative;
+      width: 25%;
+      &:before{
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+      & > div {
+        position: absolute;
+        overflow: hidden;
+        top:0;
+        left:0;
+        right: 0;
+        bottom:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          top:5px;
+          right:5px;
+          bottom: 5px;
+          left: 5px;
+          & > img {
+            opacity: 0.6;
+            filter:blur(1px);
+          }
+          & > i {
+            opacity: 1;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease-in-out;
+        }
+        i{
+          opacity: 0;
+          position: absolute;
+          color: white;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+  }
+}

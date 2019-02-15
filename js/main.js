@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   showMenu();
   checkScrollFromTop();
+  openGallery();
   // função para esconder o menu mobile quando é aumentada a largura da página (caso seja superior a 1023 pixeis)
   $(window).resize(function() {
     if ($(this).width() > 1023 && $('.menu_toggle').hasClass('is-clicked')) {
@@ -53,4 +54,11 @@ function checkScrollFromTop(){
     $('#navbar').removeClass('with-background');
     $("#navbar_logo").attr("src","./images/logo-cityhack-branco.png");
   }
+}
+
+function openGallery(){
+  lightGallery(document.getElementById('lightgallery'), {
+    download: false,
+    thumbnail: true,
+  });
 }

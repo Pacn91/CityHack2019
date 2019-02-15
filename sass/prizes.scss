@@ -2,7 +2,7 @@
 
 #prizes {
   background: $light_background;
-  padding: 2rem 0;
+  padding: 2rem 0 5rem 0;
   .title {
     text-align: center;
     font-weight: 400;
@@ -36,6 +36,7 @@
       }
       &.left {
         justify-content: flex-end;
+        align-items: flex-end;
         padding-right: 2rem;
         @media only screen and (max-width: 650px){
           padding-right: 0;
@@ -45,6 +46,7 @@
       }
       &.right {
         justify-content: flex-start;
+        align-items: flex-end;
         padding-left: 2rem;
         @media only screen and (max-width: 650px){
           justify-content: center;
@@ -60,27 +62,20 @@
         height: 100%;
         object-fit: contain;
       }
-      .text_container{
-        position: absolute;
-        top:-12px;
-        height: 100%;
-        width: 100%;
-        border-radius: 50%;
-        padding:4.5rem;
-      }
       .label, .price_money {
         position: absolute;
         color: $light_background;
-
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
         white-space: nowrap;
       }
       .price_money {
+        top:47%;
         font-weight: 900;
 
       }
       .label {
+        top:65%;
         font-weight: bold;
       }
     }
@@ -88,8 +83,10 @@
     .secondPlace {
       width: 80%;
       .price_money {
-        top: 35%;
         font-size: 3.2vw;
+        @media only screen and (min-width: 1921px){
+          font-size: 60px;
+        }
         @media only screen and (max-width: 1300px){
           font-size: 4vw;
         }
@@ -101,8 +98,10 @@
         }
       }
       .label {
-        bottom: 29%;
         font-size: 1.2vw;
+        @media only screen and (min-width: 1921px){
+          font-size: 23px;
+        }
         @media only screen and (max-width: 1150px){
           font-size: 1.5vw;
         }
@@ -115,8 +114,10 @@
     .firstPlace {
       width: 100%;
       .price_money {
-        top: 37%;
-        font-size: 4vw;
+        font-size: 4.3vw;
+        @media only screen and (min-width: 1921px){
+          font-size: 76px;
+        }
         @media only screen and (max-width: 1300px){
           font-size: 5vw;
         }
@@ -128,8 +129,10 @@
         }
       }
       .label {
-        bottom: 30%;
         font-size: 1.5vw;
+        @media only screen and (min-width: 1921px){
+          font-size: 29px;
+        }
         @media only screen and (max-width: 1150px){
           font-size: 2vw;
         }
@@ -142,8 +145,10 @@
     .thirdPlace {
       width: 60%;
       .price_money {
-        top: 32%;
         font-size: 2.8vw;
+        @media only screen and (min-width: 1921px){
+          font-size: 53px;
+        }
         @media only screen and (max-width: 1300px){
           font-size: 3.5vw;
         }
@@ -155,8 +160,10 @@
         }
       }
       .label {
-        bottom: 28%;
         font-size: 0.9vw;
+        @media only screen and (min-width: 1921px){
+          font-size: 17px;
+        }
         @media only screen and (max-width: 1150px){
           font-size: 1.3vw;
         }
