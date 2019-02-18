@@ -10,7 +10,7 @@
     <!-- CSS ================================================== -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="css/lightgallery.css" />
+    <link rel="stylesheet" href="css/fancybox.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -26,8 +26,9 @@
 
     <!-- JavaScript =========================================== -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/afterglow.min.js"></script>
     <script src="js/particles.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/fittext.js"></script>
 
     <script src="js/main.js"></script>
     <!-- Livereload =========================================== -->
@@ -75,7 +76,7 @@
       <img src="./images/grafismo-topo-site-cityhack.png" alt="Grafismo CityHack" />
       <div class="apoio">
         <h1>Apoio Principal</h1>
-        <img src="./images/logoFundaçãoCG.png" alt="Fundação Calouste Gulbenkian" />
+        <img src="./images/logoFundaçãoCG-branco.png" alt="Fundação Calouste Gulbenkian" />
       </div>
     </section>
 
@@ -138,10 +139,7 @@
     <section id="video">
       <h1>Vê o vídeo do evento anterior</h1>
       <i class="fas fa-play-circle"></i>
-      <a class="afterglow" href="#myvideo"></a>
-      <video id="myvideo" width="960" height="540">
-        <source type="video/mp4" src="./videos/CityHack_Tomar_2017.mp4" data-quality="hd"/>
-      </video>
+      <a data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8"></a>
     </section>
 
     <!-- Cronologia do evento -->
@@ -215,91 +213,90 @@
     </section>
 
     <!-- Evento anteriores -->
-    <section id="eventosAnteriores">
-      <div id="lightgallery">
-        <a href="./images/cityhack2018/1.jpg">
-          <div>
-            <img src="./images/cityhack2018/1.jpg" alt="Thumbnail 1" />
-            <i class="fas fa-search"></i>
+    <section id="eventosAnteriores" class="clearfix">
+      <!-- <h1 class="title">Edições Anteriores</h1> -->
+
+
+      <!-- Edição 2018 -->
+      <div class="edition2018">
+        <h1 class="previousEditionsTitle">Edição 2018</h1>
+        <div class="info_container">
+          <div class="info_box">
+            <span class="info_number">311</span>
+            <span class="info_label">registos</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/2.jpg">
-          <div>
-            <img src="./images/cityhack2018/2.jpg" alt="Thumbnail 2" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">170</span>
+            <span class="info_label">participantes</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/3.jpg">
-          <div>
-            <img src="./images/cityhack2018/3.jpg" alt="Thumbnail 3" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">24</span>
+            <span class="info_label">horas de trabalho</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/4.jpg">
-          <div>
-            <img src="./images/cityhack2018/4.jpg" alt="Thumbnail 4" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">36</span>
+            <span class="info_label">projetos</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/5.jpg">
-          <div>
-            <img src="./images/cityhack2018/5.jpg" alt="Thumbnail 5" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">35</span>
+            <span class="info_label">mentores</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/6.jpg">
-          <div>
-            <img src="./images/cityhack2018/6.jpg" alt="Thumbnail 6" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">10</span>
+            <span class="info_label">projetos selecionados</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/7.jpg">
-          <div>
-            <img src="./images/cityhack2018/7.jpg" alt="Thumbnail 7" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">3</span>
+            <span class="info_label">projetos premiados</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/8.jpg">
-          <div>
-            <img src="./images/cityhack2018/8.jpg" alt="Thumbnail 8" />
-            <i class="fas fa-search"></i>
+        </div>
+        <div class="buttons">
+          <button id="2018gallery">Ver galeria</button>
+          <button id="2018teaser" data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8">Ver teaser</button>
+        </div>
+      </div>
+
+      <!-- Edição 2017 -->
+      <div class="edition2017">
+
+        <h1 class="previousEditionsTitle">Edição 2017</h1>
+        <div class="info_container">
+          <div class="info_box">
+            <span class="info_number">311</span>
+            <span class="info_label">registos</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/9.jpg">
-          <div>
-            <img src="./images/cityhack2018/9.jpg" alt="Thumbnail 9" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">170</span>
+            <span class="info_label">participantes</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/10.jpg">
-          <div>
-            <img src="./images/cityhack2018/10.jpg" alt="Thumbnail 10" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">24</span>
+            <span class="info_label">horas de trabalho</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/11.jpg">
-          <div>
-            <img src="./images/cityhack2018/11.jpg" alt="Thumbnail 11" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">36</span>
+            <span class="info_label">projetos</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/12.jpg">
-          <div>
-            <img src="./images/cityhack2018/12.jpg" alt="Thumbnail 12" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">35</span>
+            <span class="info_label">mentores</span>
           </div>
-        </a>
-        <a href="./images/cityhack2018/13.jpg">
-          <div>
-            <img src="./images/cityhack2018/13.jpg" alt="Thumbnail 13" />
-            <i class="fas fa-search"></i>
+          <div class="info_box">
+            <span class="info_number">10</span>
+            <span class="info_label">projetos selecionados</span>
           </div>
-        </a>
+          <div class="info_box">
+            <span class="info_number">3</span>
+            <span class="info_label">projetos premiados</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="2017gallery">Ver galeria</button>
+          <button id="2017teaser" data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8">Ver teaser</button>
+        </div>
       </div>
     </section>
 
-    <script src="js/lightgallery.min.js"></script>
-    <script src="js/lg-thumbnail.min.js"></script>
 
   </body>
 </html>
