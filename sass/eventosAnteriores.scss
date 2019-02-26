@@ -1,62 +1,19 @@
 @import "variables";
 
 #eventosAnteriores{
-  position: relative;
-  // background: $light_background;
-  background-image:url('../images/cityhack2019-topo-fundo-site1920x1080.png');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .title{
-    text-align: center;
-    font-size: 6rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: white;
-  }
+  padding: 10rem 0;
+  overflow-x: hidden;
   .edition2018, .edition2017{
-    position: relative;
-    z-index: 2;
-    width: 50%;
-    float:left;
-    padding: 4rem 2rem;
-    color: white;
-    overflow: hidden;
-    @media only screen and (max-width: 1024px){
-      width: 100%;
-    }
+    display: flex;
+    perspective: 4000px;
     .previousEditionsTitle{
       text-align: center;
       font-weight: 400;
       text-transform: uppercase;
-    }
-    .info_container {
-      margin-top: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      .info_box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;;
-        padding: 2rem;
-        .info_number {
-          font-size: 4rem;
-        }
-        .info_label {
-          font-size: 1.5rem;
-        }
-        @media only screen and (max-width:800px){
-          padding: 1rem;
-          .info_number {
-            font-size: 3rem;
-          }
-          .info_label {
-            font-size: 1rem;
-          }
-        }
-      }
+      white-space: nowrap;
+      transition: all 1s ease-in-out;
+      color: white;
+      font-size: 5.5vw;
     }
     .buttons {
       margin-top: 2rem;
@@ -71,7 +28,6 @@
         font-weight: 400;
         cursor: pointer;
         text-shadow: none;
-        // margin: 0 2rem;
         &:first-child {
           margin-right: 1rem;
         }
@@ -83,93 +39,280 @@
           color: black;
         }
       }
-      .video {
+    }
+    .box1 {
+      position: absolute;
+      width: 50%;
+      height: 450px;
+      background-image: linear-gradient(to right top, #302923, #3a3529, #404232, #42503e, #415f4f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transform: translateX(-20%) rotateY(45deg) skewX(10deg);
+      z-index: 2;
+      box-shadow: 90px 47px 35px 8px rgba(0,0,0,0.2);
+    }
+
+    .box2 {
+      min-height: 450px;
+      width: 100vw;
+      background-image:url('../images/cityhack2019-topo-fundo-site1920x1080.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateX(16%) rotateY(-45deg) skewX(12.5deg);
+      padding: 2rem 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 90px 27px 35px 8px rgba(0,0,0,0.2);
+      .previousEditionsTitle{
         display: none;
       }
-      @media only screen and (max-width: 370px){
-        flex-direction: column;
-        button {
-          &:first-child {
-            margin-right:0;
+      .info_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .info_box{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;;
+          padding: 2rem;
+          color: white;
+          .info_number {
+            font-size: 5rem;
           }
-          &:last-child {
-            margin-left:0;
-            margin-top: 1rem;
+          .info_label {
+            font-size: 1.5rem;
+            white-space: nowrap;
           }
         }
       }
+      .buttons {
+        display: none;
+      }
     }
-    // #lightgallery{
-    //   margin-top: 3rem;
-    //   display: flex;
-    //   flex-wrap: nowrap;
-    //   width: 100%;
-    //   a {
-    //     @for $i from 1 through 5 {
-    //       &:nth-child(#{$i}) {
-    //         display: block;
-    //       }
-    //     }
-    //     &:nth-child(5):before > div {
-    //       content:'';
-    //       position: absolute;
-    //       top:0;
-    //       right:0;
-    //       bottom:0;
-    //       left:0;
-    //       background: white;
-    //     }
-    //     display: none;
-    //     position: relative;
-    //     width: 20%;
-    //     margin: 2px;
-    //     &:before{
-    //       content: '';
-    //       display: block;
-    //       padding-top: 75%;
-    //     }
-    //     & > div {
-    //       position: absolute;
-    //       overflow: hidden;
-    //       top:0;
-    //       left:0;
-    //       right: 0;
-    //       bottom:0;
-    //       display: flex;
-    //       justify-content: center;
-    //       align-items: center;
-    //       transition: all 0.3s ease-in-out;
-    //       &:hover{
-    //         transform: scale(1.3);
-    //         z-index: 2;
-    //         & > img, & > i { opacity: 1;}
-    //       }
-    //       img {
-    //         width: 100%;
-    //         height: 100%;
-    //         object-fit: cover;
-    //         transition: all 0.3s ease-in-out;
-    //         opacity: 0.3;
-    //       }
-    //       i{
-    //         opacity: 0;
-    //         position: absolute;
-    //         color: white;
-    //         transition: all 0.3s ease-in-out;
-    //       }
-    //     }
-    //   }
-    //
-    // }
+
   }
-  .edition2017 {
-    float:right;
-    border-left: 2px solid white;
-    @media only screen and (max-width: 1024px){
-      border-top: 2px solid white;
-      border-left: unset;
+
+  .edition2018 {
+    .box1 {
+      align-items: flex-end;
+      padding-right: 5vw;
+      .previousEditionsTitle{
+        margin-left: 1rem;
+      }
     }
   }
 
+  .edition2017{
+    margin-top: 10rem;
+    .box1 {
+      align-items: flex-start;
+      padding-left: 5vw;
+      right: 0;
+      background-image: linear-gradient(to right top, #6d2b52, #6a2b4f, #682b4d, #652a4a, #622a48);
+      transform: translateX(15%) rotateY(-45deg) skewX(-10deg);
+    }
+    .box2 {
+      transform: translateX(-15%) rotateY(45deg) skewX(-12.5deg);
+    }
+  }
+
+  @media only screen and (max-width: 800px){
+    .edition2018, .edition2017 {
+      .box1 {
+        display: none;
+      }
+      .box2 {
+        padding:2rem 1rem;
+        transform: rotate(0) skewX(0);
+        .previousEditionsTitle{
+          display: block;
+          font-size: 12vw;
+        }
+        .info_container {
+          .info_box{
+            .info_number {
+              font-size: 3rem;
+            }
+          }
+        }
+        .buttons {
+          display: flex;
+        }
+      }
+    }
+    .edition2017 {
+      margin-top: 0;
+      border-top: 2px solid white;
+    }
+  }
+
+@media only screen and (min-width: 1921px){
+  .edition2018, .edition2017 {
+    .box1 {
+      .previousEditionsTitle{
+        font-size: 100px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // position: relative;
+  // // background: $light_background;
+  // background-image:url('../images/cityhack2019-topo-fundo-site1920x1080.png');
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // display: flex;
+  //
+  // // .title{
+  // //   text-align: center;
+  // //   font-size: 6rem;
+  // //   font-weight: 400;
+  // //   text-transform: uppercase;
+  // //   color: white;
+  // //   white-space: nowrap;
+  // // }
+  // .edition2018, .edition2017{
+  //   position: relative;
+  //   z-index: 2;
+  //   padding: 4rem 2rem;
+  //   color: white;
+  //   overflow: hidden;
+  //   transition: all 1s ease-in-out;
+  //   @media only screen and (max-width: 1024px){
+  //     width: 100%;
+  //   }
+  //   .previousEditionsTitle{
+  //     text-align: center;
+  //     font-weight: 400;
+  //     text-transform: uppercase;
+  //     white-space: nowrap;
+  //     transition: all 1s ease-in-out;
+  //   }
+  //   .info_container {
+  //     margin-top: 2rem;
+  //     display: flex;
+  //     flex-wrap: nowrap;
+  //     justify-content: center;
+  //     .info_box{
+  //       display: flex;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       align-items: center;;
+  //       padding: 2rem;
+  //       .info_number {
+  //         font-size: 4rem;
+  //       }
+  //       .info_label {
+  //         font-size: 1.5rem;
+  //         white-space: nowrap;
+  //       }
+  //       @media only screen and (max-width:800px){
+  //         padding: 1rem;
+  //         .info_number {
+  //           font-size: 3rem;
+  //         }
+  //         .info_label {
+  //           font-size: 1rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   .buttons {
+  //     margin-top: 2rem;
+  //     display: flex;
+  //     justify-content: center;
+  //     button {
+  //       border: 3px solid white;
+  //       background: transparent;
+  //       padding: 0.3rem 1rem;
+  //       color: white;
+  //       font-size: 1.5rem;
+  //       font-weight: 400;
+  //       cursor: pointer;
+  //       text-shadow: none;
+  //       // margin: 0 2rem;
+  //       &:first-child {
+  //         margin-right: 1rem;
+  //       }
+  //       &:last-child {
+  //         margin-left: 1rem;
+  //       }
+  //       &:hover{
+  //         background: white;
+  //         color: black;
+  //       }
+  //     }
+  //     .video {
+  //       display: none;
+  //     }
+  //     @media only screen and (max-width: 370px){
+  //       flex-direction: column;
+  //       button {
+  //         &:first-child {
+  //           margin-right:0;
+  //         }
+  //         &:last-child {
+  //           margin-left:0;
+  //           margin-top: 1rem;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .edition2018 {
+  //   flex: 1;
+  //   // width: 40%;
+  //   transform: skewY(5deg);
+  //   background: black;
+  //   &:hover {
+  //     flex:3;
+  //   }
+  // }
+  //
+  // .edition2017 {
+  //   flex:1;
+  //   // width:60%;
+  //   // background: black;
+  //   transform: skewY(5deg);
+  //   &:hover {
+  //     flex:3;
+  //   }
+  //   &:before{
+  //     content: '';
+  //     position: absolute;
+  //     top:3rem;
+  //     bottom:3rem;
+  //     width: 2px;
+  //     background: white;
+  //     left:0;
+  //   }
+  //   @media only screen and (max-width: 1024px){
+  //     border-top: 2px solid white;
+  //     &:before{
+  //       content: none;
+  //     }
+  //   }
+  // }
 
 }

@@ -38,10 +38,10 @@
     <navbar id="navbar">
       <div class="navbar_wrapper clearfix">
         <div class="nav_logo">
-          <img id="navbar_logo" src="./images/logo-cityhack-branco.png" alt="Navbar Logo" />
+          <a href="#banner"><img id="navbar_logo" src="./images/logo-cityhack-branco.png" alt="Navbar Logo" /></a>
         </div>
         <ul class="menu">
-          <li><a href="index.html">Edição 2019 <i class="fas fa-angle-down"></i></a>
+          <li><a href="#about">Edição 2019 <i class="fas fa-angle-down"></i></a>
             <ul class="sub_menu">
               <li>Inspiration</li>
               <li>Ideation</li>
@@ -51,15 +51,15 @@
           </li>
           <li>Inscrições <i class="fas fa-angle-down"></i>
             <ul class="sub_menu">
-              <li>Regulamento</li>
-              <li>Inscrições</li>
-              <li>Prémios</li>
-              <li>Teaser</li>
+              <li><a data-fancybox data-src="#regulamento">Regulamento</a></li>
+              <li><a id="google_form" data-fancybox data-type="iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdcQE95DhFWOmcUgnhYGfuephSDFWeNy7tuE6SPoApvXQxRLg/viewform?usp=sf_link">Inscrições</a></li>
+              <li><a href="#prizes">Prémios</a></li>
+              <li><a href="#video">Teaser</a></li>
             </ul>
           </li>
-          <li><!--<a href="about.html">Sobre nós</a>-->Sobre nós</li>
+          <!-- <li><a href="#about">Sobre nós</a></li> -->
 
-          <li>Edições anteriores</li>
+          <li><a href="#eventosAnteriores">Edições anteriores</a></li>
           <li>ENGLISH</li>
         </ul>
 
@@ -69,6 +69,192 @@
         </a>
       </div>
     </navbar>
+
+    <!-- Regulamento -->
+    <div id="regulamento">
+      <div class="title_container clearfix">
+        <h1 class="title">Regulamento, Termos e Condições – CityHack 2019</h1>
+        <h3 class="subtitle">Versão em Português</h3>
+      </div>
+
+      <div class="capitulo">
+        <h3>1. Objetivo</h3>
+        <p>
+          <b>a)</b> O CityHack é um evento sob a forma de maratona, com a duração de 24 horas, que visa o desenvolvimento de soluções tecnológicas para cidades. A edição de 2019 é vocacionada para soluções correspondentes a desafios com impacto social.
+        </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>2. Organização</h3>
+        <p>
+          <b>a)</b> Organizado pelos alunos do Mestrado de Engenharia Informática – Internet das Coisas (MEI-IOT), da Escola Superior de Tecnologia do Instituto Politécnico de Tomar. A coordenação da organização será efetuada pelos docentes da comissão de coordenação do referido mestrado.
+        </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>3. Candidatura e elegibilidade</h3>
+        <p>
+          <b>a)</b> Podem candidatar-se equipas de 3 a 6 elementos que sejam alunos de Universidades e Institutos Politécnicos, em que pelo menos dois sejam oriundos de cursos tecnológicos. A equipa poderá incluir dois elementos que não frequentem o ensino superior desde que não sejam colaboradores (docentes ou funcionários) do Instituto Politécnico de Tomar ou de qualquer uma das organizações ou empresas que façam parte do júri.
+        </p>
+        <p>
+          <b>b)</b> As equipas, na candidatura, deverão apresentar uma súmula do projeto que pretendem desenvolver, que deverá incidir sobre um dos desafios apresentados na secção desafios/challenges do website do evento www.cityhack.ipt.pt.
+        </p>
+        <p>
+          <b>c)</b> As candidaturas serão efetuadas no website www.cityhack.ipt.pt preenchendo o formulário aí disponibilizado.
+        </p>
+        <p>
+          <b>d)</b> Poderá ser apresentada uma proposta para um desafio não apresentado no website, desde que tenha impacto social.
+        </p>
+        <p>
+          <b>e)</b> As candidaturas serão objeto de pré-seleção, com destaque para a relevância e oportunidade do projeto a que se propõem, devendo a proposta ter um claro impacto social.
+        </p>
+        <p>
+          <b>f)</b> Indivíduos que não se inscrevam em equipa, serão apoiados na formação de equipa para a participação no evento. As candidaturas individuais têm que indicar o desafio a que se propõem.
+        </p>
+        <p>
+          <b>g)</b> Anteriormente ao evento terá lugar uma sessão de Ideation na qual é recomendada a participação das equipas inscritas. O detalhe do que consiste esta sessão encontra-se no website na secção de ideation.
+        </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>4. Instalação e infraestruturas</h3>
+        <p>
+          <b>a)</b> Decorrerá no Complexo da Levada, na cidade de Tomar, nos dias 11 e 12 de maio de 2019. A organização poderá mudar a localização do evento, mas sempre dentro da cidade de Tomar, disso terá que informar todas as equipas inscritas por e-mail e no website.
+        </p>
+        <p>
+          <b>b)</b> Os participantes concordam que as instalações e infraestruturas do CityHack serão utilizadas em exclusivo para a realização do evento.
+        </p>
+        <p>
+          <b>c)</b> Os participantes devem providenciar os equipamentos de índole tecnológica, bem como o software que julguem necessários ao desenvolvimento das ideias a concurso (ex.: computador portáteis, IDE de desenvolvimento).
+        </p>
+        <p>
+          <b>d)</b> As equipas terão acompanhamento de mentores especialistas nos temas correspondentes aos desafios indicados.
+        </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>5. Júri</h3>
+        <p>
+          <b>a)</b> O Júri será constituído por um representante da Fundação Calouste Gulbenkian, pela presidente da Câmara Municipal de Tomar, pelo presidente do Instituto Politécnico de Tomar e por representantes dos parceiros.
+        </p>
+        <p>
+          <b>b)</b> O Júri terá assessoria técnica por parte dos Mentores e por parte de docentes do Instituto Politécnico de Tomar.
+        </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>6. Prémios</h3>
+        <p>
+          <b>a)</b> Serão atribuídos prémios às três melhores equipas, nos seguintes montantes:
+        </p>
+          <p class="inner">
+            1.º prémio - 2.000,00 Euros
+          </p>
+          <p class="inner">
+            2.º prémio - 1.000,00 Euros
+          </p>
+          <p class="inner">
+            3.º prémio - 500,00 Euros
+          </p>
+        <p>
+          <b>b)</b> As atividades paralelas que forem eventualmente desenvolvidas durante o evento poderão ser premiadas.
+        </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>7. Avaliação e Critérios</h3>
+        <p>
+          <b>a)</b> A avaliação dos trabalhos será efetuada em duas etapas: pitch e apresentação final.
+        </p>
+        <p>
+          <b>b)</b> Todas as equipas apresentarão um pitch com a síntese do seu trabalho, durante o evento num horário e com duração a definir.
+        </p>
+        <p>
+          <b>c)</b> Os mentores, selecionarão 5 equipas para a apresentação final.
+        </p>
+        <p>
+          <b>d)</b> A partir das 5 equipas pré-selecionadas pelos mentores para a apresentação final o
+          júri atribuirá o primeiro, segundo e terceiro lugares.
+        </p>
+        <p>
+          <b>e)</b> Tanto para a seleção das 5 equipas finalistas como para a atribuição dos três lugares premiados os critérios de avaliação, todos com a mesma ponderação, serão os seguintes:
+        </p>
+          <p class="inner">
+            <i><b>1.</b> <u>Inovação</u> - a ideia é única e apresenta uma solução genuína?</i>
+          </p>
+          <p class="inner">
+            <i><b>2.</b> <u>impacto no negócio</u> - há potencial para gerar valor adicional ao negócio ou atrair fundos filantrópicos?</i>
+          </p>
+          <p class="inner">
+            <i><b>3.</b> <u>ligação aos temas</u> - a solução enquadra-se num dos temas?</i>
+          </p>
+          <p class="inner">
+            <i><b>4.</b> <u>evolução durante o hackathon</u> - houve comprovada evolução desde a ideia inicial?</i>
+          </p>
+          <p class="inner">
+            <i><b>5.</b> <u>“user experience”</u> - a ideia fornece experiências sugestivas e relevantes para os potenciais utilizadores?</i>
+          </p>
+          <p class="inner">
+            <i><b>6.</b> <u>demonstração técnica (maturidade)</u> - a ideia é tecnicamente viável e escalável com um protótipo a funcionar com qualidade técnica?</i>
+          </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>8. Termos de participação</h3>
+        <p>
+          <b>a)</b> Os participantes concordam com as seguintes condições para a candidatura e participação nesta iniciativa:
+        </p>
+          <p class="inner">
+            <b>1.</b> As ideias a concurso não devem conter quaisquer referências sexuais explícitas ou sugestivas, violentas ou depreciativas para qualquer grupo ético, racial, religioso, profissional ou de idade, ou conteúdo pornográfico.
+          </p>
+          <p class="inner">
+            <b>2.</b> As ideias a concurso não podem promover drogas ilegais ou armas de fogo (ou o uso de qualquer uma das anteriores), ou qualquer atividade que possa ter mensagens inseguras ou perigosas, ou políticas.
+          </p>
+          <p class="inner">
+            <b>3.</b> As ideias a concurso não podem ser obscenas ou ofensivas, ou apoiar qualquer forma de ódio individual ou de grupo, ou comentários
+            depreciativos sobre a organização, os seus produtos ou serviços, ou de outras pessoas, produtos ou empresas.
+          </p>
+          <p class="inner">
+            <b>4.</b> As ideias a concurso não podem conter materiais protegidos por direitos de autor ou propriedade de terceiros (incluindo fotografias, esculturas, pinturas e outras obras de arte ou imagens publicadas em sites ou na televisão, filmes ou outras médias).
+          </p>
+          <p class="inner">
+            <b>5.</b> As ideias a concurso não podem conter nomes, imagens, fotografias ou outros indícios de identificação de qualquer pessoa, viva ou morta, sem autorização explícita das mesmas ou dos seus representantes.
+          </p>
+          <p class="inner">
+            <b>6.</b> As ideias a concurso devem ser originais, não tendo sido anteriormente publicadas comercialmente ou licenciadas, ou premiadas em iniciativas de carácter semelhante ao CityHack.
+          </p>
+          <p class="inner">
+            <b>7.</b> Os participantes declaram e garantem ainda que a publicação da participação através de vários meios, incluindo a publicação na Internet/online não infringe os direitos de terceiros.
+          </p>
+          <p class="inner">
+            <b>8.</b> Se a organização tiver motivos para suspeitar de conduta desleal, enganosa ou fraudulenta por parte de qualquer participante ou terceiros, seja de que natureza for, a organização reserva-se o direito de desqualificar quem considere, com carácter de razoabilidade, ser
+            responsável ou por estar associado a esse comportamento inadequado.
+          </p>
+          <p class="inner">
+            <b>9.</b> A organização reserva-se o direito de alterar ou cancelar o evento a qualquer momento, mediante envio de notificação para os candidatos que já se tenham inscrito.
+          </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>9. Propriedade das Ideias</h3>
+        <p>
+          <b>a)</b> Todas as soluções em competição desenvolvidas e apresentadas no âmbito deste evento são propriedade dos respetivos autores, no cumprimento do estabelecido legalmente relativamente a direitos de autor.
+        </p>
+      </div>
+
+      <div class="capitulo">
+        <h3>10. Dúvidas ou sugestões</h3>
+        <p>
+          <b>a)</b> Para resposta a quaisquer questões ou para esclarecimento de dúvidas, os participantes deverão primeiramente consultar a informação disponível no website.
+        </p>
+        <p>
+          <b>b)</b> Para obter qualquer informação adicional ou apresentação de sugestões, entre
+          em contacto através do e-mail cityhack@ipt.pt, ou
+            <a href="https://www.facebook.com/WeAreCityHack/" target="_blank">https://www.facebook.com/WeAreCityHack/</a>
+        </p>
+      </div>
+
+    </div>
 
     <!-- Banner -->
     <section id="banner">
@@ -88,7 +274,7 @@
         <div class="container clearfix">
           <div class="subtitle">
             <p>
-              <i>O Instituto Politécnico de Tomar e o Município de Tomar com o apoio da Fundação Calouste Gulbenkian anunciam a 3ª edição do Projeto CityHack – A cidade como uma plataforma social.</i>
+              <i>O Instituto Politécnico de Tomar e o Município de Tomar com o apoio da Fundação Calouste Gulbenkian anunciam a 3ª edição do Projeto CityHack* – A cidade como uma plataforma social.</i>
             </p>
           </div>
           <div class="description_left">
@@ -101,12 +287,16 @@
             <p>Este projeto visa incentivar os participantes a apresentar soluções tecnológicas para a melhoria da qualidade de vida nas cidades, reconhecendo, valorizando e retendo talentos, também tendo como objetivo criar condições para a concretização das ideias geradas.</p>
 
             <p>Não há qualquer custo de inscrição e toda a logística nas 24 horas, incluindo as refeições, estará a cargo da organização.</p>
+
+
           </div>
         </div>
+        <small>* O CityHAck é uma marca registada pelo Instituto Politécnico de Tomar no Instituto Nacional da Propriedade Industrial, nº 588134 em 13/12/2017</small>
 
       </div>
     </section>
 
+    <!-- Prémios -->
     <section id="prizes">
       <div class="wrapper">
         <h1 class="title">Prémios</h1>
@@ -135,9 +325,10 @@
         </div>
       </div>
     </section>
+
     <!-- Video do evento anterior  -->
     <section id="video">
-      <h1>Vê o vídeo do evento anterior</h1>
+      <h1>Vê o teaser do evento</h1>
       <i class="fas fa-play-circle"></i>
       <a data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8"></a>
     </section>
@@ -192,72 +383,121 @@
       </div>
     </section>
 
-    <!-- Parceiros -->
-    <section id="partners">
-      <div class="wrapper">
-        <h1 class="title">
-          Apoio
-        </h1>
-        <div class="apoio">
-          <img src="./images/logoFundaçãoCG.png" alt="Fundação Calouste Gulbenkian" />
-        </div>
-        <!-- <h1 class="title">
-          Parcerias
-        </h1> -->
-        <!-- <div class="parcerias">
-
-          <img src="./images/criticalSoftware.png" alt="Critical Software" />
-          <img src="./images/cmtomar.jpg" alt="CM Tomar" />
-        </div> -->
-      </div>
-    </section>
-
     <!-- Evento anteriores -->
     <section id="eventosAnteriores" class="clearfix">
       <!-- <h1 class="title">Edições Anteriores</h1> -->
+      <div class="edition2018">
+        <div class="box1">
+          <h1 class="previousEditionsTitle">Edição 2018</h1>
+          <div class="buttons">
+            <button class="2018gallery">Ver galeria</button>
+            <button class="2018teaser">Ver vídeos</button>
+          </div>
+        </div>
+        <div class="box2">
+          <h1 class="previousEditionsTitle">Edição 2018</h1>
+          <div class="info_container">
+            <div class="info_box">
+              <span class="info_number">20</span>
+              <span class="info_label">equipas</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">80</span>
+              <span class="info_label">participantes</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">11</span>
+              <span class="info_label">instituições de ensino</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">10</span>
+              <span class="info_label">áreas de desafio</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">25%</span>
+              <span class="info_label">sexo femino</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="2018gallery">Ver galeria</button>
+            <button class="2018teaser">Ver vídeos</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="edition2017">
+        <div class="box1">
+          <h1 class="previousEditionsTitle">Edição 2017</h1>
+          <div class="buttons">
+            <button class="2017gallery">Ver galeria</button>
+            <button class="2017teaser">Ver vídeos</button>
+          </div>
+        </div>
+        <div class="box2">
+          <h1 class="previousEditionsTitle">Edição 2017</h1>
+          <div class="info_container">
+            <div class="info_box">
+              <span class="info_number">16</span>
+              <span class="info_label">equipas</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">70</span>
+              <span class="info_label">participantes</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">10</span>
+              <span class="info_label">instituições de ensino</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">6</span>
+              <span class="info_label">áreas de desafio</span>
+            </div>
+            <div class="info_box">
+              <span class="info_number">10%</span>
+              <span class="info_label">sexo femino</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="2017gallery">Ver galeria</button>
+            <button class="2017teaser">Ver vídeos</button>
+          </div>
+        </div>
+
+      </div>
 
       <!-- Edição 2018 -->
-      <div class="edition2018">
+      <!-- <div class="edition2018">
         <h1 class="previousEditionsTitle">Edição 2018</h1>
         <div class="info_container">
           <div class="info_box">
-            <span class="info_number">311</span>
-            <span class="info_label">registos</span>
+            <span class="info_number">20</span>
+            <span class="info_label">equipas</span>
           </div>
           <div class="info_box">
-            <span class="info_number">170</span>
+            <span class="info_number">80</span>
             <span class="info_label">participantes</span>
           </div>
           <div class="info_box">
-            <span class="info_number">24</span>
-            <span class="info_label">horas de trabalho</span>
-          </div>
-          <div class="info_box">
-            <span class="info_number">36</span>
-            <span class="info_label">projetos</span>
-          </div>
-          <div class="info_box">
-            <span class="info_number">35</span>
-            <span class="info_label">mentores</span>
+            <span class="info_number">11</span>
+            <span class="info_label">instituições de ensino</span>
           </div>
           <div class="info_box">
             <span class="info_number">10</span>
-            <span class="info_label">projetos selecionados</span>
+            <span class="info_label">áreas de desafio</span>
           </div>
           <div class="info_box">
-            <span class="info_number">3</span>
-            <span class="info_label">projetos premiados</span>
+            <span class="info_number">25%</span>
+            <span class="info_label">sexo femino</span>
           </div>
         </div>
         <div class="buttons">
           <button id="2018gallery">Ver galeria</button>
-          <button id="2018teaser" data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8">Ver teaser</button>
+          <button id="2018teaser" data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8">Ver vídeo</button>
         </div>
-      </div>
+      </div> -->
 
       <!-- Edição 2017 -->
-      <div class="edition2017">
+      <!-- <div class="edition2017">
 
         <h1 class="previousEditionsTitle">Edição 2017</h1>
         <div class="info_container">
@@ -292,11 +532,29 @@
         </div>
         <div class="buttons">
           <button id="2017gallery">Ver galeria</button>
-          <button id="2017teaser" data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8">Ver teaser</button>
+          <button id="2017teaser" data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8">Ver vídeo</button>
         </div>
-      </div>
+      </div> -->
     </section>
 
+    <!-- Parceiros -->
+    <section id="partners">
+      <div class="wrapper">
+        <h1 class="title">
+          Apoio
+        </h1>
+        <div class="apoio">
+          <img src="./images/logoFundaçãoCG.png" alt="Fundação Calouste Gulbenkian" />
+        </div>
+        <!-- <h1 class="title">
+          Parcerias
+        </h1> -->
+        <!-- <div class="parcerias">
 
+          <img src="./images/criticalSoftware.png" alt="Critical Software" />
+          <img src="./images/cmtomar.jpg" alt="CM Tomar" />
+        </div> -->
+      </div>
+    </section>
   </body>
 </html>

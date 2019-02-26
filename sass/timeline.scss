@@ -1,7 +1,7 @@
 @import "variables";
 
 #timeline {
-  background: $light_background;
+  background: white;
   padding: 2rem 0;
   .timeline_title {
     text-align: center;
@@ -69,7 +69,8 @@
               position: absolute;
               width: 20px;
               height: 20px;
-              background: #f8f8f8;
+              // background: #f8f8f8;
+              background: white;
               transform: translateY(-50%) translateX(-50%) rotate(45deg);
               left:0;
               top: 50%;
@@ -116,7 +117,8 @@
               position: absolute;
               width: 20px;
               height: 20px;
-              background: #f8f8f8;
+              // background: #f8f8f8;
+              background: white;
               transform: translateY(-50%) translateX(-50%) rotate(45deg);
               left: 100%;
               top: 50%;

@@ -1,6 +1,6 @@
 #about {
   .wrapper {
-    overflow-x: hidden;
+    overflow: hidden;
   }
   margin:2rem 0 4rem 0;
   @media only screen and (max-width: 800px){
@@ -30,6 +30,7 @@
     left:50%;
     transform: translateX(-50%);
     text-align: center;
+    font-size: 1.2rem;
     &:before {
       content: '';
       position: absolute;
@@ -87,6 +88,7 @@
     .description_right {
       float:right;
     }
+
     @media only screen and (max-width: 800px){
       .description_left, .description_right{
         width: 100%;
@@ -101,6 +103,12 @@
     }
   }
 
-
+  small {
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+  }
 
 }
