@@ -1,3 +1,5 @@
+@import "variables";
+
 #about {
   .wrapper {
     overflow: hidden;
@@ -39,7 +41,7 @@
       left: 100%;
       margin-left: 10%;
       top: 50%;
-      background: #ccc;
+      background: $violet;
     }
     &:after {
       content: '';
@@ -49,7 +51,7 @@
       right: 100%;
       margin-right: 10%;
       top: 50%;
-      background: #ccc;
+      background: $violet;
     }
   }
   .container {

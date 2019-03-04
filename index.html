@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/inspiration.css" />
+    <link rel="stylesheet" href="css/ideation.css" />
     <link rel="stylesheet" href="css/partners.css" />
     <link rel="stylesheet" href="css/prizes.css" />
     <link rel="stylesheet" href="css/eventosAnteriores.css" />
@@ -43,16 +45,16 @@
         <ul class="menu">
           <li><a href="#about">Edição 2019 <i class="fas fa-angle-down"></i></a>
             <ul class="sub_menu">
-              <li>Inspiration</li>
-              <li>Ideation</li>
-              <li>Hackathon</li>
+              <li><a href="#inspiration">Inspiration</li>
+              <li><a href="#ideation">Ideation</li>
+              <li><a href="#timeline">Hackathon</a></li>
               <li>Implementation</li>
             </ul>
           </li>
           <li>Inscrições <i class="fas fa-angle-down"></i>
             <ul class="sub_menu">
               <li><a data-fancybox data-src="#regulamento">Regulamento</a></li>
-              <li><a id="google_form" data-fancybox data-type="iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdcQE95DhFWOmcUgnhYGfuephSDFWeNy7tuE6SPoApvXQxRLg/viewform?usp=sf_link">Inscrições</a></li>
+              <li><a class="google_form" data-fancybox data-type="iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdcQE95DhFWOmcUgnhYGfuephSDFWeNy7tuE6SPoApvXQxRLg/viewform?usp=sf_link">Inscrições</a></li>
               <li><a href="#prizes">Prémios</a></li>
               <li><a href="#video">Teaser</a></li>
             </ul>
@@ -259,10 +261,35 @@
     <!-- Banner -->
     <section id="banner">
       <div id="particles-js"></div>
-      <img src="./images/grafismo-topo-site-cityhack.png" alt="Grafismo CityHack" />
-      <div class="apoio">
-        <h1>Apoio Principal</h1>
-        <img src="./images/logoFundaçãoCG-branco.png" alt="Fundação Calouste Gulbenkian" />
+      <div class="countdown">
+        <div class="description">
+          <p><a class="google_form" data-fancybox data-type="iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdcQE95DhFWOmcUgnhYGfuephSDFWeNy7tuE6SPoApvXQxRLg/viewform?usp=sf_link">Inscreve-te</a> antes que o tempo termine!</p>
+        </div>
+        <div class="timer">
+          <div class="box">
+            <span class="number" id="cityhackDaysLeft"></span>
+            <span class="label">dias</span>
+          </div>
+          <div class="box">
+            <span class="number" id="cityhackHoursLeft"></span>
+            <span class="label">horas</span>
+          </div>
+          <div class="box">
+            <span class="number" id="cityhackMinutesLeft"></span>
+            <span class="label">minutos</span>
+          </div>
+          <div class="box">
+            <span class="number" id="cityhackSecondsLeft"></span>
+            <span class="label">segundos</span>
+          </div>
+        </div>
+      </div>
+      <div class="imagem">
+        <img class="logo_cityhack" src="./images/grafismo-topo-site-cityhack.png" alt="Grafismo CityHack" />
+        <div class="apoio">
+          <h1>Apoio Principal</h1>
+          <img class="logo_Gulbenkian" src="./images/logoFundaçãoCG-branco.png" alt="Fundação Calouste Gulbenkian" />
+        </div>
       </div>
     </section>
 
@@ -333,21 +360,380 @@
       <a data-fancybox href="https://www.youtube.com/watch?v=Q43mk1_uHK8"></a>
     </section>
 
+    <!-- Desafios -->
+    <section id="inspiration">
+      <span class="background_title">Inspiration</span>
+      <div class="wrapper">
+        <h1>Inspiration</h1>
+        <div class="container">
+          <div class="box">
+            <span class="number">1</span>
+            <div id="content1" class="content" onclick="toggleChallenge('content1')">
+              <span class="label">Envelhecimento ativo</span>
+              <div class="sub_content">
+                <span class="sub_label">Comunicação e Relações Sociais</span>
+                <p>Soluções de combate ao isolamento e sedentarismo dos idosos</p>
+                <span class="sub_label">Saúde e Bem-Estar</span>
+                <p>Da digitalização de serviços de saúde ao desenvolvimento de processos de recuperação ou prevenção</p>
+                <span class="sub_label">Cuidadores</span>
+                <p>Tecnologias que tornem os cuidadores de idosos mais eficientes no seu trabalho</p>
+                <span class="sub_label">Estimulação Cognitiva</span>
+                <p>Ferramentas de estimulação cognitiva de forma simples, intuitiva e divertida</p>
+                <span class="sub_label">Nutrição</span>
+                <p>Soluções tecnológicas para manter e controlar uma alimentação saudável adequada a seniores</p>
+                <span class="sub_label">Mobilidade</span>
+                <p>Criação de alternativas viáveis aos transportes públicos para idosos</p>
+                <span class="sub_label">Transferência de Conhecimentos</span>
+                <p>Plataformas para promover o contacto entre jovens e idosos e evitar perda de conhecimentos</p>
+                <span class="sub_label">Finanças Pessoais</span>
+                <p>Soluções mais adequadas de serviços financeiros para idoso</p>
+              </div>
+              <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+          <div class="box">
+            <span class="number">2</span>
+            <div id="content2" class="content" onclick="toggleChallenge('content2')">
+              <span class="label">Integração dos refugiados e migrantes nas sociedades  de acolhimento</span>
+              <div class="sub_content">
+                <span class="sub_label">Integração Cultural</span>
+                <p>Procura de soluções tecnológicas que contribuam para: uma maior participação na sociedade de acolhimento, aprendizagem da língua da sociedade de acolhimento, aumento dos estímulos à criatividade através das artes e do desporto</p>
+                <span class="sub_label">Integração no Mercado de Trabalho</span>
+                <p>Desenvolvimento de soluções tecnológicas que facilitem a integração no mercado de trabalho da população ativa migrante</p>
+              </div>
+              <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+          <div class="box">
+            <span class="number">3</span>
+            <div id="content3" class="content" onclick="toggleChallenge('content3')">
+              <span class="label">Bem-estar das crianças e jovens</span>
+              <div class="sub_content">
+                <span class="sub_label">Saúde, Bem-Estar e Estilo de Vida Saudáveis</span>
+                <p>Quais os cuidados prestados a este grupo? Como podemos identificar os distúrbios psicológicos ou perturbações de desenvolvimento? Como incentivar crianças e jovens a implementar boas práticas de nutrição, exercício físico e bem-estar no geral?</p>
+                <span class="sub_label">Competências Sociais e Emocionais Como adquirir competências emocionais e sociais?</span>
+                <p>Aqui procuramos treinar a resiliência, a sociabilidade, o reforço da autoestima e do autocontrolo, a participação e a cidadania, assim como o estímulo à criatividade, artes e desporto</p>
+                <span class="sub_label">Parentalidade</span>
+                <p>Como promover a qualificação dos cuidadores, pais e outros familiares e profissionais? Podemos melhorar as práticas parentais, a capacitação e a monitorização?</p>
+                <span class="sub_label">Aprendizagem</span>
+                <p>É possível facilitar a aprendizagem através da estimulação, motivação e utilização de formas lúdicas e apelativas? Podemos usar ferramentas para escolas e professores, de forma a combate o insucesso, o absentismo e o abandono escolar?</p>
+              </div>
+              <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+          <div class="box">
+            <span class="number">4</span>
+            <div id="content4" class="content" onclick="toggleChallenge('content4')">
+              <span class="label">Pessoas com necessidades especiais</span>
+              <div class="sub_content">
+                <span class="sub_label">Comunicações</span>
+                <p>Soluções tecnológicas que permitam a utilização eficiente de dispositivos pessoais (computadores, tablets e smartphones) por parte de pessoas com necessidades especiais</p>
+                <span class="sub_label">Mobilidade</span>
+                <p>Desenvolvimento de tecnologias que contribuam para o aumento da mobilidade de pessoas com limitações motoras</p>
+                <span class="sub_label">Cuidadores</span>
+                <p>Desenvolvimento de tecnologias que contribuam para o aumento da eficiência dos cuidadores de pessoas com necessidades especiais</p>
+                <span class="sub_label">Estimulação Cognitiva</span>
+                <p>Ferramentas de software simples, amigáveis que ajudem na estimulação cognitiva de pessoas com necessidades especiais (e.g. autismo)</p>
+              </div>
+              <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+          <div class="box">
+            <span class="number">5</span>
+            <div id="content5" class="content" onclick="toggleChallenge('content5')">
+              <span class="label">Transformação sustentada do mercado de trabalho</span>
+              <div class="sub_content">
+                <span class="sub_label">Geração de novas formas de trabalho</span>
+                <p>O crescimento tecnológico veio colocar em risco diversas profissões ameaçando a subsistência de milhões de pessoas. Procura de soluções tecnológicas que contribuam para a geração de novas formas de trabalho, e consequentemente ajudem à transformação sustentada do trabalho</p>
+                <span class="sub_label">Conversão de trabalhadores</span>
+                <p>Pretende-se encontrar propostas de soluções tecnológicas que facilitem a conversão de trabalhadores cujas profissões se encontrem em risco de extinção</p>
+              </div>
+              <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+          <div class="box">
+            <span class="number">6</span>
+            <div id="content6" class="content" onclick="toggleChallenge('content6')">
+              <span class="label">Desenvolvimento sustentável</span>
+              <div class="sub_content">
+                <span class="sub_label">Educação da sustentabilidade</span>
+                <p>Desenvolvimento de tecnologias que permitam a melhoria social e económica das pessoas através de uma melhor utilização dos recursos naturais e energéticos</p>
+                <span class="sub_label">Desenvolvimento sustentável da floresta</span>
+                <p>Procura de soluções de reordenamento da floresta e de soluções sustentáveis de exploração da floresta. Estas propostas devem contribuir para a melhoria das condições de vida das populações através, por exemplo, da prevenção de incêndios ou criação de novos postos de trabalho</p>
+                <span class="sub_label">Empreendedorismo sustentável</span>
+                <p>Proposta de soluções que promovam o desenvolvimento de novos negócios que protejam o ambiente e que promovam o bem-estar social</p>
+              </div>
+              <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+          <div class="box">
+            <span class="number">7</span>
+            <div class="content">
+              <span class="label">Outro (com impacto social)</span>
+              <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mentores">
+        <!-- Mentor 1 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 2 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 3 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 4 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 5 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 6 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 7 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 8 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 9 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 10 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+        <!-- Mentor 11 -->
+        <div class="mentor">
+            <div class="flipper">
+              <div class="flipper_inner">
+                <div class="front">
+                  <img src="./images/Unknown.jpg" alt="Imagem Mentor" />
+                </div>
+                <div class="back">
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          <span class="mentor_name">John Doe</span>
+          <small class="mentor_description">Professor do IPT</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inspiração -->
+    <section id="ideation">
+      <span class="background_title">Ideation</span>
+      <div class="wrapper">
+        <h1>Ideation</h1>
+        <span class="localization">30 de Abril de 2019</span>
+        <div class="content">
+          <div class="left_column">
+            <p class="introducao">As sessões de ideação são momentos pensados para ajudar os participantes a alcançarem soluções mais estruturadas para serem desenvolvidos, posteriormente, no decorrer dos hackathons apoiados pela FCG. Estas sessões podem tambem funcionar como momentos de ativação para que mais participantes se inscrevam nos hackathons.</p>
+            <br />
+            <br />
+            <p class="title">Modelo:</p>
+            <br />
+            <p>- sessões de 4 horas - máximo;</p>
+            <p>- equipas de 3 a 5 pessoas com um número ideal de cerca de 20 pessoas por sessão;</p>
+            <br />
+            <br />
+            <p class="title">Agenda:</p>
+            <br />
+            <p class="subtitle">Check in - 10 min</p>
+            <p>Expectativas: O que esperam tirar do workshop?</p>
+            <br />
+            <p class="subtitle">Introdução e warm up - 25 min</p>
+            <p>Apresentação sobre pensamento divergente vs convergente.</p>
+            <p>Exercício para reflexão sobre os princípios da criativadade e da geração de ideias. Mais info.</p>
+            <br />
+            <p class="subtitle">Apresentação do desafio - 30 min</p>
+            <p>Qual é o problema que estamos a tentar resolver?</p>
+            <p>Que dados temos sobre este problema?</p>
+          </div>
+          <div class="right_column">
+            <p class="subtitle">Mash-Up Ideation - 50 min</p>
+            <p>Este é um método colaborativo de geração de ideias, em que os participantes criam conceitos inovadores ao combinar diferentes elementos.</p>
+            <br />
+            <p class="subtitle">Coffee break - 10 min</p>
+            <br />
+            <p class="subtitle">Idea speed dating - 50min</p>
+            <p>Depois de geradas muitas ideias e trabalhadas algumas, as equipas irão passar as suas ideias aos outros participantes, que irão dar o seu input externo.</p>
+            <br />
+            <p class="subtitle">E agora? - 15 min</p>
+            <p>Depois de geradas as ideias, como decidir qual deve ser escolhida? Validação junto de potenciais utilizadores.</p>
+            <br />
+            <p><b>1)</b> Team Canvas. Quais são os objectivos individuais e de grupo para este projecto?</p>
+            <p><b>2)</b> Matriz de decisão - Que critérios vai o grupo utilizar para escolher a ideia a desenvolver?</p>
+            <br />
+            <p class="subtitle">Check out - 15 min</p>
+            <p>Expectativas: Rever lista inicial. Foram cumpridas?</p>
+            <div class="image">
+              <img src="./images/lilianaCastro.png" alt="Liliana Castro" />
+              <div class="imageInformation">
+                <span class="name">Liliana Castro</span>
+                <small class="subtitle">Founder & Manager FES Agency</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Cronologia do evento -->
     <section id="timeline">
       <div class="wrapper">
         <h1 class="timeline_title">Detalhes Da Agenda do Evento</h1>
         <p class="subtitle">Os horários presentes podem ser alterados caso exista alguma necessidade de ajuste ou de acordo com o regulamento.</p>
+        <div class="buttons">
+          <button id="timelineDay1Button" class="day1 selected" onPress="">11 de Maio</button>
+          <button id="timelineDay2Button" class="day2" onPress="">12 de Maio</button>
+        </div>
         <div class="timeline">
-          <ul class="clearfix">
+          <ul id="timelineDay1" class="clearfix">
             <li>
               <div class="content clearfix">
                 <div class="image">
                   <img src="./images/logo-city-hack2019.png" alt="Logo City Hack">
                 </div>
                 <div class="content_info">
-                  <span class="hora">10H00</span>
-                  <h4>Receção</h4>
+                  <span class="hora">09H30</span>
+                  <h4>Welcome</h4>
                   <small>Bem vindo ao CityHack 2019!</small>
                 </div>
                 <div class="arrow"></div>
@@ -359,11 +745,37 @@
                   <img src="./images/Tomar.jpg" alt="Tomar">
                 </div>
                 <div class="content_info">
-                  <span class="hora">11H00</span>
-                  <h4>Visita à cidade</h4>
-                  <small>Conheça a cidade de Tomar!</small>
+                  <span class="hora">10H30</span>
+                  <h4>Apresentação aos mentores</h4>
+                  <small>Conheça os seus mentores!</small>
                 </div>
                 <div class="arrow"></div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">13H00</span>
+                  <h4>Almoço</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">14H30</span>
+                  <h4>Keynote speaker - Luís Jerónimo</h4>
+                  <small>Director Adjunto do Programa Gulbenkian de Desenvolvimento Humano da Fundação Calouste Gulbenkian</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
             </li>
             <li>
               <div class="content clearfix">
@@ -374,6 +786,150 @@
                   <span class="hora">15H00</span>
                   <h4>Início HACKATHON</h4>
                   <small>Dá tudo o que tens!</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">17H00</span>
+                  <h4>Lanche</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">20H00</span>
+                  <h4>Jantar</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">21H30</span>
+                  <h4>Keynote speaker - Ana Rita Nogueira</h4>
+                  <small>Competências interpessoais de comunicação</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">23H30</span>
+                  <h4>Ceia</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+          </ul>
+          <ul id="timelineDay2" class="clearfix">
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/logo-city-hack2019.png" alt="Logo City Hack">
+                </div>
+                <div class="content_info">
+                  <span class="hora">08H30</span>
+                  <h4>Pequeno almoço</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/Tomar.jpg" alt="Tomar">
+                </div>
+                <div class="content_info">
+                  <span class="hora">10H00</span>
+                  <h4>Pitches</h4>
+                  <small>Primeira avaliação</small>
+                </div>
+                <div class="arrow"></div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">13H30</span>
+                  <h4>Almoço</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">15H00</span>
+                  <h4>Fim HACKATHON</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">15H10</span>
+                  <h4>Apresentação dos 5 finalistas!</h4>
+                  <small>Informação extra...</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">16H00</span>
+                  <h4>Deliberação</h4>
+                  <small>Deliberação do júri e entrega do 1º, 2º e 3º prémios</small>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </li>
+            <li>
+              <div class="content clearfix">
+                <div class="image">
+                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                </div>
+                <div class="content_info">
+                  <span class="hora">16H30</span>
+                  <h4>Fim do evento</h4>
+                  <small>Informação extra...</small>
                 </div>
                 <div class="arrow"></div>
               </div>

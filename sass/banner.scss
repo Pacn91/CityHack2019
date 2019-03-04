@@ -1,3 +1,5 @@
+@import "variables";
+
 #banner{
   position: relative;
   height: 100vh;
@@ -7,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0 20px 0;
+  // padding: 100px 0 20px 0;
   @media only screen and (min-width: 1921px){
     background-image: url("../images/cityhack2019-topo-fundo-site2048x1365.png");
   }
@@ -18,7 +20,85 @@
     left:0;
     bottom:0;
   }
-  img {
+  .countdown{
+    position: relative;
+    height: 100%;
+    padding: 120px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(white, 0.1);
+    .description{
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0 1rem 1rem 1rem;
+      .google_form {
+        padding: 0.3rem 0.8rem;
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          background: white;
+          color:black;
+        }
+      }
+      p {
+        margin-top: 0.5rem;
+      }
+    }
+    .timer{
+      display: flex;
+      color: white;
+      padding: 1rem 0;
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        width:100px;
+        .number{
+          font-size: 4rem;
+        }
+        .label {
+          text-transform: uppercase;
+        }
+        &:nth-child(2){
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+        }
+        &:last-child {
+          border-left: 1px solid white;
+        }
+      }
+    }
+  }
+  .imagem {
+    padding: 100px 0 20px 0;
+    position: relative;
+    // width: 100%;
+    flex:1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding-left: 5rem;
+    // background: rgba(pink, 0.3);
+    img.logo_cityhack {
+      position: relative;
+      height: 90%;
+      width: 90%;
+      max-height: 647px;
+      max-width: 632px;
+      left:-400px;
+      transform: translateX(200px);
+      object-fit: contain;
+    }
+  }
+  img.logo_Gulbenkian {
+    position: relative;
     height: 90%;
     width: 90%;
     max-height: 647px;
@@ -36,11 +116,55 @@
       font-size: 1.3rem;
     }
   }
-  @media only screen and (max-width: 1024px){
-    padding-bottom: 150px;
+  @media only screen and (max-width: 1400px){
+    .imagem {
+      padding-bottom: 150px;
+    }
     .apoio{
       right:50%;
       transform: translateX(50%);
+    }
+  }
+
+  @media only screen and (max-width: 1000px){
+    flex-direction: column;
+    .countdown{
+      height: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 120px;
+      width: 100%;
+      .description {
+        font-size: 1rem;
+        .google_form {
+          padding: 0.25rem 0.5rem;
+          margin-right: 0.3rem;
+        }
+      }
+      .timer {
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+        justify-content: center;
+        .box {
+          width: 80px;
+          .number {
+            font-size: 2rem;
+          }
+          .label {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+    .imagem {
+      padding-top: 10px;
+      padding-bottom: 90px;
+    }
+    .apoio{
+      h1{ font-size: 1rem;}
+      img.logo_Gulbenkian {
+        width: 60%;
+      }
     }
   }
 }
