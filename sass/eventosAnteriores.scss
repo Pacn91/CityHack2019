@@ -57,7 +57,7 @@
     .box2 {
       min-height: 450px;
       width: 100vw;
-      background-image:url('../images/cityhack2019-topo-fundo-site1920x1080.png');
+      // background-image:url('../images/img1-site2048x1365.png');
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -107,6 +107,9 @@
         margin-left: 1rem;
       }
     }
+    .box2 {
+      background-image:url('../images/img2-site2048x1365.png');
+    }
   }
 
   .edition2017{
@@ -119,11 +122,13 @@
       transform: translateX(15%) rotateY(-45deg) skewX(-10deg);
     }
     .box2 {
+      background-image:url('../images/img1-site2048x1365.png');
       transform: translateX(-15%) rotateY(45deg) skewX(-12.5deg);
     }
   }
 
   @media only screen and (max-width: 800px){
+    padding: 1rem 0;
     .edition2018, .edition2017 {
       .box1 {
         display: none;
@@ -145,6 +150,7 @@
         .buttons {
           display: flex;
         }
+        box-shadow: none;
       }
     }
     .edition2017 {
@@ -153,166 +159,13 @@
     }
   }
 
-@media only screen and (min-width: 1921px){
-  .edition2018, .edition2017 {
-    .box1 {
-      .previousEditionsTitle{
-        font-size: 100px;
+  @media only screen and (min-width: 1921px){
+    .edition2018, .edition2017 {
+      .box1 {
+        .previousEditionsTitle{
+          font-size: 100px;
+        }
       }
     }
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // position: relative;
-  // // background: $light_background;
-  // background-image:url('../images/cityhack2019-topo-fundo-site1920x1080.png');
-  // background-attachment: fixed;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // display: flex;
-  //
-  // // .title{
-  // //   text-align: center;
-  // //   font-size: 6rem;
-  // //   font-weight: 400;
-  // //   text-transform: uppercase;
-  // //   color: white;
-  // //   white-space: nowrap;
-  // // }
-  // .edition2018, .edition2017{
-  //   position: relative;
-  //   z-index: 2;
-  //   padding: 4rem 2rem;
-  //   color: white;
-  //   overflow: hidden;
-  //   transition: all 1s ease-in-out;
-  //   @media only screen and (max-width: 1024px){
-  //     width: 100%;
-  //   }
-  //   .previousEditionsTitle{
-  //     text-align: center;
-  //     font-weight: 400;
-  //     text-transform: uppercase;
-  //     white-space: nowrap;
-  //     transition: all 1s ease-in-out;
-  //   }
-  //   .info_container {
-  //     margin-top: 2rem;
-  //     display: flex;
-  //     flex-wrap: nowrap;
-  //     justify-content: center;
-  //     .info_box{
-  //       display: flex;
-  //       flex-direction: column;
-  //       justify-content: center;
-  //       align-items: center;;
-  //       padding: 2rem;
-  //       .info_number {
-  //         font-size: 4rem;
-  //       }
-  //       .info_label {
-  //         font-size: 1.5rem;
-  //         white-space: nowrap;
-  //       }
-  //       @media only screen and (max-width:800px){
-  //         padding: 1rem;
-  //         .info_number {
-  //           font-size: 3rem;
-  //         }
-  //         .info_label {
-  //           font-size: 1rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .buttons {
-  //     margin-top: 2rem;
-  //     display: flex;
-  //     justify-content: center;
-  //     button {
-  //       border: 3px solid white;
-  //       background: transparent;
-  //       padding: 0.3rem 1rem;
-  //       color: white;
-  //       font-size: 1.5rem;
-  //       font-weight: 400;
-  //       cursor: pointer;
-  //       text-shadow: none;
-  //       // margin: 0 2rem;
-  //       &:first-child {
-  //         margin-right: 1rem;
-  //       }
-  //       &:last-child {
-  //         margin-left: 1rem;
-  //       }
-  //       &:hover{
-  //         background: white;
-  //         color: black;
-  //       }
-  //     }
-  //     .video {
-  //       display: none;
-  //     }
-  //     @media only screen and (max-width: 370px){
-  //       flex-direction: column;
-  //       button {
-  //         &:first-child {
-  //           margin-right:0;
-  //         }
-  //         &:last-child {
-  //           margin-left:0;
-  //           margin-top: 1rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // .edition2018 {
-  //   flex: 1;
-  //   // width: 40%;
-  //   transform: skewY(5deg);
-  //   background: black;
-  //   &:hover {
-  //     flex:3;
-  //   }
-  // }
-  //
-  // .edition2017 {
-  //   flex:1;
-  //   // width:60%;
-  //   // background: black;
-  //   transform: skewY(5deg);
-  //   &:hover {
-  //     flex:3;
-  //   }
-  //   &:before{
-  //     content: '';
-  //     position: absolute;
-  //     top:3rem;
-  //     bottom:3rem;
-  //     width: 2px;
-  //     background: white;
-  //     left:0;
-  //   }
-  //   @media only screen and (max-width: 1024px){
-  //     border-top: 2px solid white;
-  //     &:before{
-  //       content: none;
-  //     }
-  //   }
-  // }
-
 }

@@ -1,0 +1,14 @@
+@import "variables";
+
+#implementation {
+  position: relative;
+  background: $light_background;
+  overflow: hidden;
+  padding: 2rem 0;
+  text-align: center;
+  .background_title {
+    color: $violet;
+    font-size: 10vw;
+    margin-bottom: 1rem;
+  }
+}
