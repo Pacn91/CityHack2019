@@ -7,15 +7,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
-  // padding: 100px 0 20px 0;
+  padding: 100px 0 100px 0;
   @media only screen and (min-width: 1921px){
     background-image: url("../images/cityhack2019-topo-fundo-site2048x1365.png");
   }
   @media only screen and (max-width: 500px){
     background-image: url("../images/cityhack2019-topo-fundo-site-telmoveis500.png");
+  }
+  @media only screen and (max-width: 750px){
+    flex-direction: column;
   }
   #particles-js {
     position: absolute;
@@ -25,15 +28,12 @@
     bottom:0;
   }
   .grafismo {
-    padding: 100px 0 1rem 0;
     position: relative;
-    // width: 100%;
-    // flex:1;
-    // height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    height: 100%;
     img.logo_cityhack {
       position: relative;
       height: 100%;
@@ -42,41 +42,71 @@
       max-width: 632px;
       object-fit: contain;
     }
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   width:2px;
+    //   height: 100%;
+    //   left:0;
+    //   top:0;
+    //   bottom:0;
+    //   background: white;
+    //   transform: rotate(15deg);
+    //   z-index: 2;
+    // }
   }
   .countdown{
+    &:before {
+      content: '';
+      position: absolute;
+      width:2px;
+      height: 100%;
+      right:0;
+      top:0;
+      bottom:0;
+      background: white;
+      transform: rotate(15deg);
+    }
     position: relative;
-    width: 100%;
-    padding: 1rem 0;
+    padding-right: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // background-image: linear-gradient(to right, rgba(white, 0.1) 40%, #fad80b 20%, rgba(white, 0.1) 40%);
-    background-image: radial-gradient(circle, #fad80b 1%, rgba(white, 0.1));
-    .description{
-      font-size: 1.5rem;
-      text-align: center;
-      padding-bottom: 0.5rem;
-      color: black;
-      text-transform: uppercase;
-      font-weight: bold;
-      .google_form {
-        background: transparent;
-        color: black;
-        cursor: pointer;
-        i {
-          transition: all 0.3s ease-in-out;
-        }
-        &:hover i{
+    .link_to_google_form {
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(0.95);
+        .description .title i {
           transform: rotate(-45deg);
         }
       }
+    }
+    .description{
+      font-size: 1.5rem;
+      text-align: center;
+      padding-bottom: 0.3rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      .title {
+        i {
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    small.dataLimite {
+      font-size: 1rem;
+      color: white;
+      display: block;
+      text-align: center;
     }
     .timer{
       display: flex;
       color: white;
       padding: 0;
-      color: black;
+      color: #fad80b;
       .box {
         position: relative;
         display: flex;
@@ -85,8 +115,9 @@
         align-items: center;
         padding: 0.5rem;
         width:auto;
+        width:72px;
         .number{
-          font-size: 2rem;
+          font-size: 3rem;
         }
         .label {
           text-transform: uppercase;
@@ -97,14 +128,14 @@
             &:before {
               content:':';
               position: absolute;
-              color: black;
+              color: #fad80b;
               left:-3px;
               transform: translateY(-5px);
             }
             &:after {
               content:':';
               position: absolute;
-              color: black;
+              color: #fad80b;
               right:-3px;
               transform: translateY(-5px);
             }
@@ -115,7 +146,7 @@
             &:before {
               content:':';
               position: absolute;
-              color: black;
+              color: #fad80b;
               left:-3px;
               transform: translateY(-5px);
             }
@@ -123,29 +154,42 @@
         }
       }
     }
-
-    .WeAreCityHack {
-      position: absolute;
-      right:2rem;
-      top:50%;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      label {
-        font-size: 1rem;
-        font-weight: bold;
+    @media only screen and (max-width: 750px){
+      padding-top: 1rem;
+      margin-bottom:2rem;
+      &:before {
+        content: none;
       }
-      .redesSociais i {
-        color: white;
-        font-size: 1.5rem;
-        margin: 0.5rem 0.2rem;
+      .timer .box .number {
+        font-size: 2rem;
       }
     }
+    @media only screen and (max-width: 500px){
+      padding-top: 2rem;
+      .description {
+        font-size: 1rem;
+      }
+      small.dataLimite {
+        margin-bottom: 0.3rem;
+      }
+      .timer .box .number {
+        font-size: 1.6rem;
+      }
+      .WeAreCityHack {
+        margin-top: 1.5rem;
+        position: relative;
+        top:inherit;
+        right: inherit;
+        transform: translateY(0);
+        .redesSociais i {
+          margin-top: 0;
+        }
+      }
+  }
   }
   .apoio {
+    position: absolute;
+    bottom:0;
     height: 100px;
     text-align: center;
     margin-top: 1rem;
@@ -158,76 +202,35 @@
     img.logo_Gulbenkian {
       position: relative;
       height: 70%;
-      width: 100%;
       object-fit: contain;
     }
-  }
-
-  @media only screen and (max-width: 640px){
-    .countdown {
-      .description {
-        font-size: 1rem;
-      }
-      .timer .box .number {
-        font-size: 1.6rem;
-      }
-      .WeAreCityHack {
-        margin-top: 1.5rem;
-        position: relative;
-        top:inherit;
-        right: inherit;
-        transform: translateY(0);
-      }
+    @media only screen and (max-width: 750px){
+      left: 2rem;
     }
-
-  //   .imagem {
-  //     padding-bottom: 150px;
-  //   }
-  //   .apoio{
-  //     right:50%;
-  //     transform: translateX(50%);
-  //   }
+    @media only screen and (max-width: 350px){
+      left: 0.5rem;
+    }
   }
-  //
-  // @media only screen and (max-width: 1000px){
-  //   flex-direction: column;
-  //   .countdown{
-  //     height: auto;
-  //     padding-top: 1rem;
-  //     padding-bottom: 1rem;
-  //     margin-top: 120px;
-  //     width: 100%;
-  //     .description {
-  //       font-size: 1rem;
-  //       .google_form {
-  //         padding: 0.25rem 0.5rem;
-  //         margin-right: 0.3rem;
-  //       }
-  //     }
-  //     .timer {
-  //       padding-top: 0.5rem;
-  //       padding-bottom: 0;
-  //       justify-content: center;
-  //       .box {
-  //         width: 80px;
-  //         .number {
-  //           font-size: 2rem;
-  //         }
-  //         .label {
-  //           font-size: 0.7rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .imagem {
-  //     padding-top: 10px;
-  //     padding-bottom: 90px;
-  //   }
-  //   .apoio{
-  //     h1{ font-size: 1rem;}
-  //     img.logo_Gulbenkian {
-  //       width: 60%;
-  //     }
-  //   }
-  // }
+  .WeAreCityHack {
+    position: absolute;
+    right:2rem;
+    bottom:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .redesSociais i {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0.5rem 0.2rem;
+    }
+    @media only screen and (max-width: 350px){
+      right: 0.5rem;
+    }
+  }
 }

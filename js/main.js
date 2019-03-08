@@ -367,7 +367,7 @@ function smoothScroll(){
 
 function countdownFunction() {
   // Set the date we're counting down to
-  var countDownDate = new Date("May 11, 2019 15:00:00").getTime();
+  var countDownDate = new Date("April 26, 2019 23:59:59").getTime();
 
   // Get todays date and time
   var now = new Date().getTime();
