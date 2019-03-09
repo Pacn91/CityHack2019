@@ -1,6 +1,5 @@
 <?php
 
-
 $title['edition19'] = 'Edição 2019';
 $title['edition18'] = 'Edição 2018';
 $title['edition17'] = 'Edição 2017';
@@ -54,7 +53,7 @@ $content['rule7e1'] = 'a ideia é única e apresenta uma solução genuína?';
 $title['rule7e2'] = 'Impacto no negócio ';
 $content['rule7e2'] = 'há potencial para gerar valor adicional ao negócio ou atrair fundos filantrópicos?';
 $title['rule7e3'] = 'Ligação aos temas ';
-$content['rule7e3'] = '3.a solução enquadra-se num dos temas?';
+$content['rule7e3'] = 'a solução enquadra-se num dos temas?';
 $title['rule7e4'] = 'Evolução durante o hackathon ';
 $content['rule7e4'] = 'houve comprovada evolução desde a ideia inicial?';
 $title['rule7e5'] = '“User experience” ';
@@ -67,11 +66,11 @@ $content['rule8-1'] ='As ideias a concurso não devem conter quaisquer referênc
 $content['rule8-2'] ='As ideias a concurso não podem promover drogas ilegais ou armas de fogo (ou o uso de qualquer uma das anteriores), ou qualquer atividade que possa ter mensagens inseguras ou perigosas, ou políticas.';
 $content['rule8-3'] ='As ideias a concurso não podem ser obscenas ou ofensivas, ou apoiar qualquer forma de ódio individual ou de grupo, ou comentários depreciativos sobre a organização, os seus produtos ou serviços, ou de outras pessoas, produtos ou empresas';
 $content['rule8-4'] ='As ideias a concurso não podem conter materiais protegidos por direitos de autor ou propriedade de terceiros (incluindo fotografias, esculturas, pinturas e outras obras de arte ou imagens publicadas em sites ou na televisão, filmes ou outras médias)';
-$content['rule8-5'] ='As ideias a concurso não podem conter nomes, imagens, fotografias ou outros indícios de identificação de qualquer pessoa, viva ou morta, sem autorização explícita das mesmas ou dos seus representantes';
-$content['rule8-6'] ='As ideias a concurso devem ser originais, não tendo sido anteriormente publicadas comercialmente ou licenciadas, ou premiadas em iniciativas de carácter semelhante ao CityHack';
-$content['rule8-7'] ='Os participantes declaram e garantem ainda que a publicação da participação através de vários meios, incluindo a publicação na Internet/online não infringe os direitos de terceiros';
-$content['rule8-8'] ='Se a organização tiver motivos para suspeitar de conduta desleal, enganosa ou fraudulenta por parte de qualquer participante ou terceiros, seja de que natureza for, a organização reserva-se o direito de desqualificar quem considere, com carácter de razoabilidade, ser responsável ou por estar associado a esse comportamento inadequado';
-$content['rule8-9'] ='A organização reserva-se o direito de alterar ou cancelar o evento a qualquer momento, mediante envio de notificação para os candidatos que já se tenham inscrito';
+$content['rule8-5'] ='As ideias a concurso não podem conter nomes, imagens, fotografias ou outros indícios de identificação de qualquer pessoa, viva ou morta, sem autorização explícita das mesmas ou dos seus representantes.';
+$content['rule8-6'] ='As ideias a concurso devem ser originais, não tendo sido anteriormente publicadas comercialmente ou licenciadas, ou premiadas em iniciativas de carácter semelhante ao CityHack.';
+$content['rule8-7'] ='Os participantes declaram e garantem ainda que a publicação da participação através de vários meios, incluindo a publicação na Internet/online não infringe os direitos de terceiros.';
+$content['rule8-8'] ='Se a organização tiver motivos para suspeitar de conduta desleal, enganosa ou fraudulenta por parte de qualquer participante ou terceiros, seja de que natureza for, a organização reserva-se o direito de desqualificar quem considere, com carácter de razoabilidade, ser responsável ou por estar associado a esse comportamento inadequado.';
+$content['rule8-9'] ='A organização reserva-se o direito de alterar ou cancelar o evento a qualquer momento, mediante envio de notificação para os candidatos que já se tenham inscrito.';
 $title['rule9'] = '9. Propriedade das Ideias';
 $content['rule9']='Todas as soluções em competição desenvolvidas e apresentadas no âmbito deste evento são propriedade dos respetivos autores, no cumprimento do estabelecido legalmente relativamente a direitos de autor.';
 $title['rule10']='10. Dúvidas ou sugestões';
@@ -151,7 +150,7 @@ $content['subtitle-6-1'] = 'Desenvolvimento de tecnologias que permitam a melhor
 $subtitle['challenge6-2'] = 'Desenvolvimento sustentável da floresta';
 $content['subtitle-6-2'] = 'Procura de soluções de reordenamento da floresta e de soluções sustentáveis de exploração da floresta. Estas propostas devem contribuir para a melhoria das condições de vida das populações através, por exemplo, da prevenção de incêndios ou criação de novos postos de trabalho';
 $subtitle['challenge6-3'] = 'Empreendedorismo sustentável';
-$content['subtitle-6-3'] = 'Proposta de soluções que promovam o desenvolvimento de novos negócios que protejam o ambiente e que promovam o bem-estar social';
+$content['subtitle-6-3'] = 'Proposta de soluções que promovam o desenvolvimento de novos negócios que protejam o ambiente e que promovam o bem-estar social.';
 
 
 $title['challenge7'] = 'Outro (com impacto social)';
@@ -168,7 +167,7 @@ $subtitle['agenda-1'] = 'Check in - 10 min';
 $content['agenda-1'] = 'Expectativas: O que esperam tirar do workshop?';
 $subtitle['agenda-2'] = 'Introdução e warm up - 25 min';
 $content['agenda-2-1'] = 'Apresentação sobre pensamento divergente vs convergente.';
-$content['agenda-2-2'] = 'Exercício para reflexão sobre os princípios da criativadade e da geração de ideias. Mais info.';
+$content['agenda-2-2'] = 'Exercício para reflexão sobre os princípios da criatividade e da geração de ideias. Mais info.';
 $subtitle['agenda-3'] = 'Apresentação do desafio - 30 min';
 $content['agenda-3-1'] = 'Qual é o problema que estamos a tentar resolver?';
 $content['agenda-3-2'] = 'Que dados temos sobre este problema?';
