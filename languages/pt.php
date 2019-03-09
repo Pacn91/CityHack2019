@@ -14,6 +14,7 @@ $title['Prémios'] = 'Prémios';
 $title['Teaser'] = 'Teaser';
 $title['oldEdition'] = 'Edições anteriores';
 $title['otherLanguage'] = 'ENGLISH';
+$title['otherLanguage-val'] = 'en';
 $title['menu'] = 'MENU';
 $title['titleRegulament'] = 'Regulamento, Termos e Condições – CityHack 2019';
 $title['rule1'] = '1. Objetivo';
@@ -249,15 +250,5 @@ $title['female'] = 'sexo femino';
 $title['Apoio'] = 'Apoio';
 $title['Parceiros'] = 'Parceiros';
 $title['Organização'] = 'Organização';
-
-
-
-
-
-
-
-
-
-
 
 ?>
