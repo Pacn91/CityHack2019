@@ -67,7 +67,7 @@
           <li><a href="#eventosAnteriores"><?= $title['oldEdition']?></a></li>
           <li>
             <form method="post">
-              <button type="submit" name="changeLanguage"  style=" border:none!important;background:transparent!important;    color: #000;font-weight: 500!important;cursor: pointer!important;"value="
+              <button type="submit" name="changeLanguage"  style=" border:none!important;background:transparent!important;font-weight: 500!important;cursor: pointer!important;"value="
             <?=$title['otherLanguage-val']?>">
             <?=$title['otherLanguage']?></button >              
             </form>
