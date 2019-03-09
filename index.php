@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <?php require 'languages/languages.php';?>
     <title>CityHack 2019</title>
     <meta charset="utf-8">
 
@@ -45,30 +46,30 @@
           <a href="#banner" data-aos="fade-up" data-aos-delay="100"><img id="navbar_logo" src="./images/logo-cityhack-branco.png" alt="Navbar Logo"/></a>
         </div>
         <ul class="menu" data-aos="fade-left">
-          <li><a href="#about">Edição 2019 <i class="fas fa-angle-down"></i></a>
+          <li><a href="#about"><?=$title['edition19'] ?> <i class="fas fa-angle-down"></i></a>
             <ul class="sub_menu">
-              <li><a href="#inspiration">Inspiration</li>
-              <li><a href="#ideation">Ideation</li>
-              <li><a href="#timeline">Hackathon</a></li>
-              <li><a href="#implementation">Implementation</a></li>
+              <li><a href="#inspiration"><?= $title['Inspiration'] ?></li>
+              <li><a href="#ideation"><?= $title['Ideation'] ?></li>
+              <li><a href="#timeline"><?= $title['Hackathon'] ?></a></li>
+              <li><a href="#implementation"><?= $title['Implementation'] ?></a></li>
             </ul>
           </li>
-          <li>Inscrições <i class="fas fa-angle-down"></i>
+          <li><?= $title['inscriptions'] ?> <i class="fas fa-angle-down"></i>
             <ul class="sub_menu">
-              <li><a data-fancybox data-src="#regulamento">Regulamento</a></li>
-              <li><a class="google_form" data-fancybox data-type="iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdcQE95DhFWOmcUgnhYGfuephSDFWeNy7tuE6SPoApvXQxRLg/viewform?usp=sf_link">Inscrições</a></li>
-              <li><a href="#prizes">Prémios</a></li>
-              <li><a href="#video">Teaser</a></li>
+              <li><a data-fancybox data-src="#regulamento"><?= $title['Regulamento'] ?></a></li>
+              <li><a class="google_form" data-fancybox data-type="iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdcQE95DhFWOmcUgnhYGfuephSDFWeNy7tuE6SPoApvXQxRLg/viewform?usp=sf_link"><?=$title['inscriptions']?></a></li>
+              <li><a href="#prizes"><?= $title['Prémios']?></a></li>
+              <li><a href="#video"><?= $title['Teaser']?></a></li>
             </ul>
           </li>
           <!-- <li><a href="#about">Sobre nós</a></li> -->
 
-          <li><a href="#eventosAnteriores">Edições anteriores</a></li>
-          <li>ENGLISH</li>
+          <li><a href="#eventosAnteriores"><?= $title['oldEdition']?></a></li>
+          <li><?=$title['otherLanguage']?></li>
         </ul>
 
         <a class="menu_toggle" data-aos="fade-left">
-          <span class="label">MENU</span>
+          <span class="label"><?= $title['menu']?></span>
           <span class="hamburguer"></span>
         </a>
       </div>
@@ -77,183 +78,149 @@
     <!-- Regulamento -->
     <div id="regulamento">
       <div class="title_container clearfix">
-        <h1 class="title">Regulamento, Termos e Condições – CityHack 2019</h1>
-        <h3 class="subtitle">Versão em Português</h3>
+        <h1 class="title"><?= $title['titleRegulament']?></h1>
+        <!--<h3 class="subtitle">Versão em Português</h3>-->
       </div>
 
       <div class="capitulo">
-        <h3>1. Objetivo</h3>
+        <h3><?=$title['rule1']?></h3>
         <p>
-          <b>a)</b> O CityHack é um evento sob a forma de maratona, com a duração de 24 horas, que visa o desenvolvimento de soluções tecnológicas para cidades. A edição de 2019 é vocacionada para soluções correspondentes a desafios com impacto social.
-        </p>
-      </div>
-
-      <div class="capitulo">
-        <h3>2. Organização</h3>
-        <p>
-          <b>a)</b> Organizado pelos alunos do Mestrado de Engenharia Informática – Internet das Coisas (MEI-IOT), da Escola Superior de Tecnologia do Instituto Politécnico de Tomar. A coordenação da organização será efetuada pelos docentes da comissão de coordenação do referido mestrado.
+          <b>a)</b> <?= $content['rule1']?>
         </p>
       </div>
 
       <div class="capitulo">
-        <h3>3. Candidatura e elegibilidade</h3>
+        <h3><?=$title['rule2']?></h3>
         <p>
-          <b>a)</b> Podem candidatar-se equipas de 3 a 6 elementos que sejam alunos de Universidades e Institutos Politécnicos, em que pelo menos dois sejam oriundos de cursos tecnológicos. A equipa poderá incluir dois elementos que não frequentem o ensino superior desde que não sejam colaboradores (docentes ou funcionários) do Instituto Politécnico de Tomar ou de qualquer uma das organizações ou empresas que façam parte do júri.
-        </p>
-        <p>
-          <b>b)</b> As equipas, na candidatura, deverão apresentar uma súmula do projeto que pretendem desenvolver, que deverá incidir sobre um dos desafios apresentados na secção desafios/challenges do website do evento www.cityhack.ipt.pt.
-        </p>
-        <p>
-          <b>c)</b> As candidaturas serão efetuadas no website www.cityhack.ipt.pt preenchendo o formulário aí disponibilizado.
-        </p>
-        <p>
-          <b>d)</b> Poderá ser apresentada uma proposta para um desafio não apresentado no website, desde que tenha impacto social.
-        </p>
-        <p>
-          <b>e)</b> As candidaturas serão objeto de pré-seleção, com destaque para a relevância e oportunidade do projeto a que se propõem, devendo a proposta ter um claro impacto social.
-        </p>
-        <p>
-          <b>f)</b> Indivíduos que não se inscrevam em equipa, serão apoiados na formação de equipa para a participação no evento. As candidaturas individuais têm que indicar o desafio a que se propõem.
-        </p>
-        <p>
-          <b>g)</b> Anteriormente ao evento terá lugar uma sessão de Ideation na qual é recomendada a participação das equipas inscritas. O detalhe do que consiste esta sessão encontra-se no website na secção de ideation.
+          <b>a)</b> <?= $content['rule2']?>
         </p>
       </div>
 
       <div class="capitulo">
-        <h3>4. Instalação e infraestruturas</h3>
+        <h3><?= $title['rule3']?></h3>
         <p>
-          <b>a)</b> Decorrerá no Complexo da Levada, na cidade de Tomar, nos dias 11 e 12 de maio de 2019. A organização poderá mudar a localização do evento, mas sempre dentro da cidade de Tomar, disso terá que informar todas as equipas inscritas por e-mail e no website.
+          <b>a)</b> <?= $content['rule3a']?>
         </p>
         <p>
-          <b>b)</b> Os participantes concordam que as instalações e infraestruturas do CityHack serão utilizadas em exclusivo para a realização do evento.
-        </p>
+          <b>b)</b>  <?= $content['rule3b']?></p>
         <p>
-          <b>c)</b> Os participantes devem providenciar os equipamentos de índole tecnológica, bem como o software que julguem necessários ao desenvolvimento das ideias a concurso (ex.: computador portáteis, IDE de desenvolvimento).
-        </p>
+          <b>c)</b>  <?= $content['rule3c']?></p>
         <p>
-          <b>d)</b> As equipas terão acompanhamento de mentores especialistas nos temas correspondentes aos desafios indicados.
-        </p>
+          <b>d)</b>  <?= $content['rule3d']?></p>
+        <p>
+          <b>e)</b>  <?= $content['rule3e']?></p>
+        <p>
+          <b>f)</b>  <?= $content['rule3f']?></p>
+        <p>
+          <b>g)</b>  <?= $content['rule3g']?></p>
       </div>
 
       <div class="capitulo">
-        <h3>5. Júri</h3>
+        <h3><?= $title['rule4']?></h3>
         <p>
-          <b>a)</b> O Júri será constituído por um representante da Fundação Calouste Gulbenkian, pela presidente da Câmara Municipal de Tomar, pelo presidente do Instituto Politécnico de Tomar e por representantes dos parceiros.
-        </p>
+          <b>a)</b> <?= $content['rule4a']?></p>
         <p>
-          <b>b)</b> O Júri terá assessoria técnica por parte dos Mentores e por parte de docentes do Instituto Politécnico de Tomar.
-        </p>
+          <b>b)</b> <?= $content['rule4b']?></p>
+        <p>
+          <b>c)</b> <?= $content['rule4c']?></p>
+        <p>
+          <b>d)</b> <?= $content['rule4d']?></p>
       </div>
 
       <div class="capitulo">
-        <h3>6. Prémios</h3>
+        <h3><?= $title['rule5']?></h3>
         <p>
-          <b>a)</b> Serão atribuídos prémios às três melhores equipas, nos seguintes montantes:
-        </p>
-          <p class="inner">
-            1.º prémio - 2.000,00 Euros
-          </p>
-          <p class="inner">
-            2.º prémio - 1.000,00 Euros
-          </p>
-          <p class="inner">
-            3.º prémio - 500,00 Euros
-          </p>
+          <b>a)</b> <?= $content['rule5a']?></p>
         <p>
-          <b>b)</b> As atividades paralelas que forem eventualmente desenvolvidas durante o evento poderão ser premiadas.
-        </p>
+          <b>b)</b> <?= $content['rule5b']?></p>
       </div>
 
       <div class="capitulo">
-        <h3>7. Avaliação e Critérios</h3>
+        <h3><?= $title['rule6']?></h3>
         <p>
-          <b>a)</b> A avaliação dos trabalhos será efetuada em duas etapas: pitch e apresentação final.
-        </p>
-        <p>
-          <b>b)</b> Todas as equipas apresentarão um pitch com a síntese do seu trabalho, durante o evento num horário e com duração a definir.
-        </p>
-        <p>
-          <b>c)</b> Os mentores, selecionarão 5 equipas para a apresentação final.
-        </p>
-        <p>
-          <b>d)</b> A partir das 5 equipas pré-selecionadas pelos mentores para a apresentação final o
-          júri atribuirá o primeiro, segundo e terceiro lugares.
-        </p>
-        <p>
-          <b>e)</b> Tanto para a seleção das 5 equipas finalistas como para a atribuição dos três lugares premiados os critérios de avaliação, todos com a mesma ponderação, serão os seguintes:
+          <b>a)</b> <?= $content['rule6a']?>
         </p>
           <p class="inner">
-            <i><b>1.</b> <u>Inovação</u> - a ideia é única e apresenta uma solução genuína?</i>
+            <?= $content['rule6a1st']?>
           </p>
           <p class="inner">
-            <i><b>2.</b> <u>impacto no negócio</u> - há potencial para gerar valor adicional ao negócio ou atrair fundos filantrópicos?</i>
+          <?= $content['rule6a2nd']?>
           </p>
           <p class="inner">
-            <i><b>3.</b> <u>ligação aos temas</u> - a solução enquadra-se num dos temas?</i>
+          <?= $content['rule6a1rt']?>
           </p>
-          <p class="inner">
-            <i><b>4.</b> <u>evolução durante o hackathon</u> - houve comprovada evolução desde a ideia inicial?</i>
-          </p>
-          <p class="inner">
-            <i><b>5.</b> <u>“user experience”</u> - a ideia fornece experiências sugestivas e relevantes para os potenciais utilizadores?</i>
-          </p>
-          <p class="inner">
-            <i><b>6.</b> <u>demonstração técnica (maturidade)</u> - a ideia é tecnicamente viável e escalável com um protótipo a funcionar com qualidade técnica?</i>
-          </p>
+        <p>
+          <b>b)</b> <?= $content['rule6b']?></p>
       </div>
 
       <div class="capitulo">
-        <h3>8. Termos de participação</h3>
+        <h3><?= $title['rule7']?></h3>
         <p>
-          <b>a)</b> Os participantes concordam com as seguintes condições para a candidatura e participação nesta iniciativa:
-        </p>
+          <b>a)</b> <?= $content['rule7a']?></p>
+        <p>
+          <b>b)</b>  <?= $content['rule7b']?> </p>
+        <p>
+          <b>c)</b>  <?= $content['rule7c']?></p>
+        <p>
+          <b>d)</b>  <?= $content['rule7d']?> </p>
+        <p>
+          <b>e)</b>  <?= $content['rule7e']?> </p>
           <p class="inner">
-            <b>1.</b> As ideias a concurso não devem conter quaisquer referências sexuais explícitas ou sugestivas, violentas ou depreciativas para qualquer grupo ético, racial, religioso, profissional ou de idade, ou conteúdo pornográfico.
+            <i><b>1.</b> <u><?=$title['rule7e1']?></u> - <?=$content['rule7e1']?></i>
           </p>
           <p class="inner">
-            <b>2.</b> As ideias a concurso não podem promover drogas ilegais ou armas de fogo (ou o uso de qualquer uma das anteriores), ou qualquer atividade que possa ter mensagens inseguras ou perigosas, ou políticas.
+            <i><b>2.</b> <u><?=$title['rule7e2']?></u> - <?=$content['rule7e2']?></i>
           </p>
           <p class="inner">
-            <b>3.</b> As ideias a concurso não podem ser obscenas ou ofensivas, ou apoiar qualquer forma de ódio individual ou de grupo, ou comentários
-            depreciativos sobre a organização, os seus produtos ou serviços, ou de outras pessoas, produtos ou empresas.
+            <i><b>3.</b> <u><?=$title['rule7e3']?></u> - <?=$content['rule7e3']?></i>
           </p>
           <p class="inner">
-            <b>4.</b> As ideias a concurso não podem conter materiais protegidos por direitos de autor ou propriedade de terceiros (incluindo fotografias, esculturas, pinturas e outras obras de arte ou imagens publicadas em sites ou na televisão, filmes ou outras médias).
+            <i><b>4.</b> <u><?=$title['rule7e4']?></u> - <?=$content['rule7e4']?></i>
           </p>
           <p class="inner">
-            <b>5.</b> As ideias a concurso não podem conter nomes, imagens, fotografias ou outros indícios de identificação de qualquer pessoa, viva ou morta, sem autorização explícita das mesmas ou dos seus representantes.
+            <i><b>5.</b> <u><?=$title['rule7e5']?></u> - <?=$content['rule7e5']?></i>
           </p>
           <p class="inner">
-            <b>6.</b> As ideias a concurso devem ser originais, não tendo sido anteriormente publicadas comercialmente ou licenciadas, ou premiadas em iniciativas de carácter semelhante ao CityHack.
-          </p>
-          <p class="inner">
-            <b>7.</b> Os participantes declaram e garantem ainda que a publicação da participação através de vários meios, incluindo a publicação na Internet/online não infringe os direitos de terceiros.
-          </p>
-          <p class="inner">
-            <b>8.</b> Se a organização tiver motivos para suspeitar de conduta desleal, enganosa ou fraudulenta por parte de qualquer participante ou terceiros, seja de que natureza for, a organização reserva-se o direito de desqualificar quem considere, com carácter de razoabilidade, ser
-            responsável ou por estar associado a esse comportamento inadequado.
-          </p>
-          <p class="inner">
-            <b>9.</b> A organização reserva-se o direito de alterar ou cancelar o evento a qualquer momento, mediante envio de notificação para os candidatos que já se tenham inscrito.
+            <i><b>6.</b> <u><?=$title['rule7e6']?></u> - <?=$content['rule7e6']?></i>
           </p>
       </div>
 
       <div class="capitulo">
-        <h3>9. Propriedade das Ideias</h3>
+        <h3><?= $title['rule8']?></h3>
         <p>
-          <b>a)</b> Todas as soluções em competição desenvolvidas e apresentadas no âmbito deste evento são propriedade dos respetivos autores, no cumprimento do estabelecido legalmente relativamente a direitos de autor.
-        </p>
+          <b>a)</b> <?= $content['rule8']?>  </p>
+          <p class="inner">
+            <b>1.</b> <?= $content['rule8-1']?>  </p>
+          <p class="inner">
+            <b>2.</b>  <?= $content['rule8-2']?></p>
+          <p class="inner">
+            <b>3.</b>  <?= $content['rule8-3']?></p>
+          <p class="inner">
+            <b>4.</b>  <?= $content['rule8-4']?></p>
+          <p class="inner">
+            <b>5.</b>  <?= $content['rule8-5']?> </p>
+          <p class="inner">
+            <b>6.</b>  <?= $content['rule8-6']?></p>
+          <p class="inner">
+            <b>7.</b>  <?= $content['rule8-7']?></p>
+          <p class="inner">
+            <b>8.</b>  <?= $content['rule8-8']?></p>
+          <p class="inner">
+            <b>9.</b>  <?= $content['rule8-9']?></p>
       </div>
 
       <div class="capitulo">
-        <h3>10. Dúvidas ou sugestões</h3>
+        <h3><?=$title['rule9'] ?></h3>
         <p>
-          <b>a)</b> Para resposta a quaisquer questões ou para esclarecimento de dúvidas, os participantes deverão primeiramente consultar a informação disponível no website.
-        </p>
+          <b>a)</b> <?=$content['rule9'] ?></p>
+      </div>
+
+      <div class="capitulo">
+        <h3><?= $title['rule10']?></h3>
         <p>
-          <b>b)</b> Para obter qualquer informação adicional ou apresentação de sugestões, entre
-          em contacto através do e-mail cityhack@ipt.pt, ou
+          <b>a)</b> <?= $content['rule10a']?>        </p>
+        <p>
+          <b>b)</b> <?= $content['rule10b']?> 
             <a href="https://www.facebook.com/WeAreCityHack/" target="_blank">https://www.facebook.com/WeAreCityHack/</a>
         </p>
       </div>
@@ -291,9 +258,9 @@
         <a class="link_to_google_form" data-fancybox data-type="iframe" data-src="https://docs.google.com/forms/d/e/1FAIpQLSdcQE95DhFWOmcUgnhYGfuephSDFWeNy7tuE6SPoApvXQxRLg/viewform?usp=sf_link">
 
         <div class="description">
-          <span class="title">Inscrições abertas <i class="fas fa-arrow-alt-circle-right"></i></span>
+          <span class="title"><?=$title['openInscriptions']?> <i class="fas fa-arrow-alt-circle-right"></i></span>
         </div>
-        <small class="dataLimite">até 26 de Abril de 2019</small>
+        <small class="dataLimite"><?= $title['limitDate']?></small>
         <div class="timer">
           <div class="box">
             <span class="cityhackDaysLeft number"></span>
@@ -319,7 +286,7 @@
       </div>
 
       <div class="apoio">
-        <h1>Apoio Principal</h1>
+        <h1><?= $title['mainSupport']?></h1>
         <img class="logo_Gulbenkian" src="./images/logoFundaçãoCG-branco.png" alt="Fundação Calouste Gulbenkian" />
       </div>
       <div class="WeAreCityHack">
@@ -336,26 +303,26 @@
     <section id="about">
       <div class="wrapper">
         <h1 class="title" data-aos="fade-up">CityHack 2019</h1>
-        <span class="localization" data-aos="fade-up">Complexo da Levada, 11 e 12 de maio de 2019</span>
+        <span class="localization" data-aos="fade-up"><?= $title['cityhackLocal']?></span>
         <div class="container clearfix">
           <div class="subtitle" data-aos="fade-up">
             <p>
-              <i>O Instituto Politécnico de Tomar e o Município de Tomar com o apoio da Fundação Calouste Gulbenkian anunciam a 3ª edição do Projeto CityHack* – A cidade como uma plataforma social.</i>
+              <i><?= $content['intro']?></i>
             </p>
           </div>
           <div class="description_left" data-aos="fade-right">
-            <p>O CityHack é um evento sob a forma de maratona, com a duração de 24 horas, que visa o desenvolvimento de soluções tecnológicas para cidades. A edição de 2019 é vocacionada para soluções correspondentes a desafios com impacto social. O evento é superiormente apoiado pela Fundação Calouste Gulbenkian no âmbito do projeto Hack for Good inserido no programa Gulbenkian de Coesão e Integração Social.</p>
+            <p><?= $content['description-1']?></p>
 
-            <p>Podem candidatar-se equipas de 3 a 6 elementos, que sejam alunos de Universidades e Institutos Politécnicos, em que pelo menos dois sejam oriundos de áreas tecnológicas. </p>
+            <p><?= $content['description-2']?></p>
           </div>
           <div class="description_right" data-aos="fade-left">
-            <p>A equipa poderá incluir dois elementos que não frequentem o ensino superior.</p>
-            <p>Este projeto visa incentivar os participantes a apresentar soluções tecnológicas para a melhoria da qualidade de vida nas cidades, reconhecendo, valorizando e retendo talentos, também tendo como objetivo criar condições para a concretização das ideias geradas.</p>
+            <p><?= $content['description-3']?></p>
+            <p><?= $content['description-4']?></p>
 
-            <p>Não há qualquer custo de inscrição e toda a logística nas 24 horas, incluindo as refeições, estará a cargo da organização.</p>
+            <p><?= $content['description-5']?></p>
           </div>
         </div>
-        <small>* O CityHack é uma marca registada pelo Instituto Politécnico de Tomar no Instituto Nacional da Propriedade Industrial, nº 588134 em 13/12/2017</small>
+        <small><?= $content['trademark']?></small>
 
       </div>
     </section>
@@ -368,22 +335,22 @@
           <div class="awards_container left">
             <div class="secondPlace" data-aos="zoom-in" data-aos-delay="200">
               <img src="./images/segundoLugar.png" alt="Second Place" />
-              <span class="price_money fit">1000€</span>
-              <span class="label">2º prémio</span>
+              <span class="price_money fit"><?= $money['nd']?></span>
+              <span class="label"><?= $title['secondPlace']?></span>
             </div>
           </div>
           <div class="awards_container">
             <div class="firstPlace" data-aos="zoom-in">
               <img src="./images/primeiroLugar.png" alt="First Place" />
-              <span class="price_money fit">2000€</span>
-              <span class="label">1º prémio</span>
+              <span class="price_money fit"><?= $money['st']?></span>
+              <span class="label"><?= $title['firstPlace']?></span>
             </div>
           </div>
           <div class="awards_container right">
             <div class="thirdPlace" data-aos="zoom-in" data-aos-delay="400">
               <img src="./images/terceiroLugar.png" alt="Third Place" />
-              <span class="price_money fit">500€</span>
-              <span class="label">3º prémio</span>
+              <span class="price_money fit"><?= $money['rd']?></span>
+              <span class="label"><?= $title['lastPlace']?></span>
             </div>
           </div>
         </div>
@@ -392,7 +359,7 @@
 
     <!-- Teaser do evento  -->
     <section id="video">
-      <h1>Vê o teaser do evento</h1>
+      <h1><?= $title['watchTeaser']?></h1>
       <i class="fas fa-play-circle"></i>
       <!-- <a data-fancybox href="https://youtu.be/HIEpWyjcOsE"></a> -->
       <a data-fancybox href="CityHack-Teaser-2019.mp4"></a>
@@ -400,31 +367,31 @@
 
     <!-- Desafios -->
     <section id="inspiration">
-      <span class="background_title">Inspiration</span>
+      <span class="background_title"><?= $title['Inspiration']?></span>
       <div class="wrapper">
-        <h1 data-aos="fade-up">Inspiration</h1>
+        <h1 data-aos="fade-up"><?= $title['Inspiration']?></h1>
         <div class="container">
           <div class="box" data-aos="fade-right">
             <span class="number">1</span>
             <div id="content1" class="content" onclick="toggleChallenge('content1')">
-              <span class="label">Envelhecimento ativo</span>
+              <span class="label"><?= $title['challenge1']?></span>
               <div class="sub_content">
-                <span class="sub_label">Comunicação e Relações Sociais</span>
-                <p>Soluções de combate ao isolamento e sedentarismo dos idosos</p>
-                <span class="sub_label">Saúde e Bem-Estar</span>
-                <p>Da digitalização de serviços de saúde ao desenvolvimento de processos de recuperação ou prevenção</p>
-                <span class="sub_label">Cuidadores</span>
-                <p>Tecnologias que tornem os cuidadores de idosos mais eficientes no seu trabalho</p>
-                <span class="sub_label">Estimulação Cognitiva</span>
-                <p>Ferramentas de estimulação cognitiva de forma simples, intuitiva e divertida</p>
-                <span class="sub_label">Nutrição</span>
-                <p>Soluções tecnológicas para manter e controlar uma alimentação saudável adequada a seniores</p>
-                <span class="sub_label">Mobilidade</span>
-                <p>Criação de alternativas viáveis aos transportes públicos para idosos</p>
-                <span class="sub_label">Transferência de Conhecimentos</span>
-                <p>Plataformas para promover o contacto entre jovens e idosos e evitar perda de conhecimentos</p>
-                <span class="sub_label">Finanças Pessoais</span>
-                <p>Soluções mais adequadas de serviços financeiros para idoso</p>
+                <span class="sub_label"><?= $subtitle['challenge1-1']?></span>
+                <p><?= $content['subtitle-1-1']?></p>
+                <span class="sub_label"><?= $subtitle['challenge1-2']?></span>
+                <p><?= $content['subtitle-1-2']?></p>
+                <span class="sub_label"><?= $subtitle['challenge1-3']?></span>
+                <p><?= $content['subtitle-1-3']?></p>
+                <span class="sub_label"><?= $subtitle['challenge1-4']?></span>
+                <p><?= $content['subtitle-1-4']?></p>
+                <span class="sub_label"><?= $subtitle['challenge1-5']?></span>
+                <p><?= $content['subtitle-1-5']?></p>
+                <span class="sub_label"><?= $subtitle['challenge1-6']?></span>
+                <p><?= $content['subtitle-1-6']?></p>
+                <span class="sub_label"><?= $subtitle['challenge1-7']?></span>
+                <p><?= $content['subtitle-1-7']?></p>
+                <span class="sub_label"><?= $subtitle['challenge1-8']?></span>
+                <p><?= $content['subtitle-1-8']?></p>
               </div>
               <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
             </div>
@@ -432,12 +399,12 @@
           <div class="box" data-aos="fade-left">
             <span class="number">2</span>
             <div id="content2" class="content" onclick="toggleChallenge('content2')">
-              <span class="label">Integração dos refugiados e migrantes nas sociedades  de acolhimento</span>
+              <span class="label"><?= $title['challenge2']?> </span>
               <div class="sub_content">
-                <span class="sub_label">Integração Cultural</span>
-                <p>Procura de soluções tecnológicas que contribuam para: uma maior participação na sociedade de acolhimento, aprendizagem da língua da sociedade de acolhimento, aumento dos estímulos à criatividade através das artes e do desporto</p>
-                <span class="sub_label">Integração no Mercado de Trabalho</span>
-                <p>Desenvolvimento de soluções tecnológicas que facilitem a integração no mercado de trabalho da população ativa migrante</p>
+                <span class="sub_label"><?= $subtitle['challenge2-1']?></span>
+                <p><?= $content['subtitle-2-1']?></p>
+                <span class="sub_label"><?= $subtitle['challenge2-2']?></span>
+                <p><?= $content['subtitle-2-2']?></p>
               </div>
               <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
             </div>
@@ -445,16 +412,16 @@
           <div class="box" data-aos="fade-right">
             <span class="number">3</span>
             <div id="content3" class="content" onclick="toggleChallenge('content3')">
-              <span class="label">Bem-estar das crianças e jovens</span>
+              <span class="label"><?= $title['challenge3']?></span>
               <div class="sub_content">
-                <span class="sub_label">Saúde, Bem-Estar e Estilo de Vida Saudáveis</span>
-                <p>Quais os cuidados prestados a este grupo? Como podemos identificar os distúrbios psicológicos ou perturbações de desenvolvimento? Como incentivar crianças e jovens a implementar boas práticas de nutrição, exercício físico e bem-estar no geral?</p>
-                <span class="sub_label">Competências Sociais e Emocionais Como adquirir competências emocionais e sociais?</span>
-                <p>Aqui procuramos treinar a resiliência, a sociabilidade, o reforço da autoestima e do autocontrolo, a participação e a cidadania, assim como o estímulo à criatividade, artes e desporto</p>
-                <span class="sub_label">Parentalidade</span>
-                <p>Como promover a qualificação dos cuidadores, pais e outros familiares e profissionais? Podemos melhorar as práticas parentais, a capacitação e a monitorização?</p>
-                <span class="sub_label">Aprendizagem</span>
-                <p>É possível facilitar a aprendizagem através da estimulação, motivação e utilização de formas lúdicas e apelativas? Podemos usar ferramentas para escolas e professores, de forma a combate o insucesso, o absentismo e o abandono escolar?</p>
+                <span class="sub_label"><?=$subtitle['challenge3-1'] ?></span>
+                <p><?=$content['subtitle-3-1'] ?></p>
+                <span class="sub_label"><?=$subtitle['challenge3-2'] ?></span>
+                <p><?=$content['subtitle-3-2'] ?></p>
+                <span class="sub_label"><?=$subtitle['challenge3-3'] ?></span>
+                <p><?=$content['subtitle-3-3'] ?></p>
+                <span class="sub_label"><?=$subtitle['challenge3-4'] ?></span>
+                <p><?=$content['subtitle-3-4'] ?></p>
               </div>
               <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
             </div>
@@ -462,16 +429,16 @@
           <div class="box" data-aos="fade-left">
             <span class="number">4</span>
             <div id="content4" class="content" onclick="toggleChallenge('content4')">
-              <span class="label">Pessoas com necessidades especiais</span>
+              <span class="label"><?= $title['challenge4']?></span>
               <div class="sub_content">
-                <span class="sub_label">Comunicações</span>
-                <p>Soluções tecnológicas que permitam a utilização eficiente de dispositivos pessoais (computadores, tablets e smartphones) por parte de pessoas com necessidades especiais</p>
-                <span class="sub_label">Mobilidade</span>
-                <p>Desenvolvimento de tecnologias que contribuam para o aumento da mobilidade de pessoas com limitações motoras</p>
-                <span class="sub_label">Cuidadores</span>
-                <p>Desenvolvimento de tecnologias que contribuam para o aumento da eficiência dos cuidadores de pessoas com necessidades especiais</p>
-                <span class="sub_label">Estimulação Cognitiva</span>
-                <p>Ferramentas de software simples, amigáveis que ajudem na estimulação cognitiva de pessoas com necessidades especiais (e.g. autismo)</p>
+                <span class="sub_label"><?= $subtitle['challenge4-1'] ?></span>
+                <p><?= $content['subtitle-4-1']?></p>
+                <span class="sub_label"><?= $subtitle['challenge4-2'] ?></span>
+                <p><?= $content['subtitle-4-2']?></p>
+                <span class="sub_label"><?= $subtitle['challenge4-3'] ?></span>
+                <p><?= $content['subtitle-4-3']?></p>
+                <span class="sub_label"><?= $subtitle['challenge4-4'] ?></span>
+                <p><?= $content['subtitle-4-4']?></p>
               </div>
               <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
             </div>
@@ -479,12 +446,12 @@
           <div class="box" data-aos="fade-right">
             <span class="number">5</span>
             <div id="content5" class="content" onclick="toggleChallenge('content5')">
-              <span class="label">Transformação sustentada do mercado de trabalho</span>
+              <span class="label"><?= $title['challenge5']?></span>
               <div class="sub_content">
-                <span class="sub_label">Geração de novas formas de trabalho</span>
-                <p>O crescimento tecnológico veio colocar em risco diversas profissões ameaçando a subsistência de milhões de pessoas. Procura de soluções tecnológicas que contribuam para a geração de novas formas de trabalho, e consequentemente ajudem à transformação sustentada do trabalho</p>
-                <span class="sub_label">Conversão de trabalhadores</span>
-                <p>Pretende-se encontrar propostas de soluções tecnológicas que facilitem a conversão de trabalhadores cujas profissões se encontrem em risco de extinção</p>
+                <span class="sub_label"><?= $subtitle['challenge5-1']?></span>
+                <p><?= $content['subtitle-5-1']?></p>
+                <span class="sub_label"><?= $subtitle['challenge5-2']?></span>
+                <p><?= $content['subtitle-5-2']?></p>
               </div>
               <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
             </div>
@@ -492,14 +459,14 @@
           <div class="box" data-aos="fade-left">
             <span class="number">6</span>
             <div id="content6" class="content" onclick="toggleChallenge('content6')">
-              <span class="label">Desenvolvimento sustentável</span>
+              <span class="label"><?= $title['challenge6']?></span>
               <div class="sub_content">
-                <span class="sub_label">Educação da sustentabilidade</span>
-                <p>Desenvolvimento de tecnologias que permitam a melhoria social e económica das pessoas através de uma melhor utilização dos recursos naturais e energéticos</p>
-                <span class="sub_label">Desenvolvimento sustentável da floresta</span>
-                <p>Procura de soluções de reordenamento da floresta e de soluções sustentáveis de exploração da floresta. Estas propostas devem contribuir para a melhoria das condições de vida das populações através, por exemplo, da prevenção de incêndios ou criação de novos postos de trabalho</p>
-                <span class="sub_label">Empreendedorismo sustentável</span>
-                <p>Proposta de soluções que promovam o desenvolvimento de novos negócios que protejam o ambiente e que promovam o bem-estar social</p>
+                <span class="sub_label"><?= $subtitle['challenge6-1']?></span>
+                <p><?= $content['subtitle-6-1']?></p>
+                <span class="sub_label"><?= $subtitle['challenge6-2']?></span>
+                <p><?= $content['subtitle-6-2']?></p>
+                <span class="sub_label"><?= $subtitle['challenge6-3']?></span>
+                <p><?= $content['subtitle-6-3']?></p>
               </div>
               <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
             </div>
@@ -507,14 +474,14 @@
           <div class="box" data-aos="fade-right">
             <span class="number">7</span>
             <div class="content">
-              <span class="label">Outro (com impacto social)</span>
+              <span class="label"><?= $title['challenge7']?></span>
               <button class="arrow_button"><i class="fas fa-angle-down"></i></button>
             </div>
           </div>
         </div>
       </div>
-      <h1 data-aos="fade-up">Mentores</h1>
-      <h2 data-aos="fade-up" style="text-align:center">A disponibilizar brevemente</h2>
+      <h1 data-aos="fade-up"><?= $title['mentors']?></h1>
+      <h2 data-aos="fade-up" style="text-align:center"><?= $title['soon']?></h2>
       <!-- <div class="mentores"> -->
         <!-- Mentor 1 -->
         <!-- <div class="mentor">
@@ -697,56 +664,56 @@
 
     <!-- Inspiração -->
     <section id="ideation">
-      <span class="background_title">Ideation</span>
+      <span class="background_title"><?= $title['Ideation']?></span>
       <div class="wrapper">
-        <h1 data-aos="fade-up">Ideation</h1>
-        <span class="localization" data-aos="fade-up">30 de Abril de 2019</span>
+        <h1 data-aos="fade-up"><?= $title['Ideation']?></h1>
+        <span class="localization" data-aos="fade-up"><?= $title['dateideation']?></span>
         <div class="content">
           <div class="left_column" data-aos="fade-right">
-            <p class="introducao">As sessões de ideação são momentos pensados para ajudar os participantes a alcançarem soluções mais estruturadas para serem desenvolvidos, posteriormente, no decorrer dos hackathons apoiados pela FCG. Estas sessões podem tambem funcionar como momentos de ativação para que mais participantes se inscrevam nos hackathons.</p>
+            <p class="introducao"><?= $content['introIdeation']?></p>
             <br />
             <br />
-            <p class="title">Modelo:</p>
+            <p class="title"><?= $title['modelIdeation']?></p>
             <br />
-            <p>- sessões de 4 horas - máximo;</p>
-            <p>- equipas de 3 a 5 pessoas com um número ideal de cerca de 20 pessoas por sessão;</p>
+            <p><?= $content['model-1']?></p>
+            <p><?= $content['model-2']?></p>
             <br />
             <br />
-            <p class="title">Agenda:</p>
+            <p class="title"><?= $title['agenda']?></p>
             <br />
-            <p class="subtitle">Check in - 10 min</p>
-            <p>Expectativas: O que esperam tirar do workshop?</p>
+            <p class="subtitle"><?= $subtitle['agenda-1']?></p>
+            <p><?= $content['agenda-1']?></p>
             <br />
-            <p class="subtitle">Introdução e warm up - 25 min</p>
-            <p>Apresentação sobre pensamento divergente vs convergente.</p>
-            <p>Exercício para reflexão sobre os princípios da criativadade e da geração de ideias. Mais info.</p>
+            <p class="subtitle"><?=$subtitle['agenda-2'] ?></p>
+            <p><?=$content['agenda-2-1'] ?></p>
+            <p><?=$content['agenda-2-2'] ?></p>
             <br />
-            <p class="subtitle">Apresentação do desafio - 30 min</p>
-            <p>Qual é o problema que estamos a tentar resolver?</p>
-            <p>Que dados temos sobre este problema?</p>
+            <p class="subtitle"><?= $subtitle['agenda-3']?></p>
+            <p><?= $content['agenda-3-1']?></p>
+            <p><?= $content['agenda-3-2']?></p>
           </div>
           <div class="right_column" data-aos="fade-left">
-            <p class="subtitle">Mash-Up Ideation - 50 min</p>
-            <p>Este é um método colaborativo de geração de ideias, em que os participantes criam conceitos inovadores ao combinar diferentes elementos.</p>
+            <p class="subtitle"><?= $subtitle['agenda-4']?></p>
+            <p><?= $content['agenda-4']?></p>
             <br />
-            <p class="subtitle">Coffee break - 10 min</p>
+            <p class="subtitle"><?= $subtitle['agenda-5']?></p>
             <br />
-            <p class="subtitle">Idea speed dating - 50min</p>
-            <p>Depois de geradas muitas ideias e trabalhadas algumas, as equipas irão passar as suas ideias aos outros participantes, que irão dar o seu input externo.</p>
+            <p class="subtitle"><?= $subtitle['agenda-6']?></p>
+            <p><?= $content['agenda-6']?></p>
             <br />
-            <p class="subtitle">E agora? - 15 min</p>
-            <p>Depois de geradas as ideias, como decidir qual deve ser escolhida? Validação junto de potenciais utilizadores.</p>
+            <p class="subtitle"><?= $subtitle['agenda-7']?></p>
+            <p><?= $content['agenda-7']?></p>
             <br />
-            <p><b>1)</b> Team Canvas. Quais são os objectivos individuais e de grupo para este projecto?</p>
-            <p><b>2)</b> Matriz de decisão - Que critérios vai o grupo utilizar para escolher a ideia a desenvolver?</p>
+            <p><b>1)</b> <?= $content['agend-7-1']?> </p>
+            <p><b>2)</b> <?= $content['agend-7-2']?></p>
             <br />
-            <p class="subtitle">Check out - 15 min</p>
-            <p>Expectativas: Rever lista inicial. Foram cumpridas?</p>
+            <p class="subtitle"><?= $subtitle['agenda-8']?></p>
+            <p><?= $content['agenda-8']?></p>
             <div class="image">
               <img src="./images/lilianaCastro.png" alt="Liliana Castro"/>
               <div class="imageInformation">
-                <span class="name">Liliana Castro</span>
-                <small class="subtitle">Founder & Manager FES Agency</small>
+                <span class="name"><?= $person['LilianaCastro'] ?></span>
+                <small class="subtitle"><?= $person['LilianaCastro-info']?></small>
               </div>
             </div>
           </div>
@@ -758,11 +725,11 @@
     <!-- Hackathon / Cronologia do evento -->
     <section id="timeline">
       <div class="wrapper">
-        <h1 class="timeline_title" data-aos="fade-up">Detalhes Da Agenda do Evento</h1>
-        <p class="subtitle" data-aos="fade-up">Os horários presentes podem ser alterados caso exista alguma necessidade de ajuste ou de acordo com o regulamento.</p>
+        <h1 class="timeline_title" data-aos="fade-up"><?= $title['timelineTitle']?> </h1>
+        <p class="subtitle" data-aos="fade-up"><?= $content['timeline-warming']?></p>
         <div class="buttons">
-          <button id="timelineDay1Button" class="day1 selected" data-aos="fade-right">11 de Maio</button>
-          <button id="timelineDay2Button" class="day2" data-aos="fade-left">12 de Maio</button>
+          <button id="timelineDay1Button" class="day1 selected" data-aos="fade-right"><?= $title['st-day']?></button>
+          <button id="timelineDay2Button" class="day2" data-aos="fade-left"><?= $title['nd-day']?></button>
         </div>
         <div class="timeline" data-aos="fade-up">
           <ul id="timelineDay1" class="clearfix">
@@ -772,9 +739,9 @@
                   <img src="./images/cronologia/img-generica.png" alt="Logo City Hack">
                 </div>
                 <div class="content_info">
-                  <span class="hora">09H30</span>
-                  <h4>Welcome</h4>
-                  <small>Bem vindo ao CityHack 2019!</small>
+                  <span class="hora"><?= $timeline['1-hour']?></span>
+                  <h4><?= $timeline['1-title']?></h4>
+                  <small><?= $timeline['1-descr']?></small>
                 </div>
                 <div class="arrow"></div>
               </div>
@@ -785,9 +752,9 @@
                   <img src="./images/cronologia/apres-mentores-w.png" alt="Tomar">
                 </div>
                 <div class="content_info">
-                  <span class="hora">10H30</span>
-                  <h4>Apresentação aos mentores</h4>
-                  <small>Conheça os seus mentores!</small>
+                  <span class="hora"><?= $timeline['2-hour']?></span>
+                  <h4><?= $timeline['2-title'] ?></h4>
+                  <small><?= $timeline['2-descr']?></small>
                 </div>
                 <div class="arrow"></div>
             </li>
@@ -797,8 +764,8 @@
                   <img src="./images/cronologia/almoço1_w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">13H00</span>
-                  <h4>Almoço</h4>
+                  <span class="hora"><?= $timeline['3-hour']?></span>
+                  <h4><?= $timeline['3-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -810,9 +777,9 @@
                   <img src="./images/cronologia/gulbenkian_ljeronimo_w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">14H30</span>
-                  <h4>Keynote speaker - Luís Jerónimo</h4>
-                  <small>Director Adjunto do Programa Gulbenkian de Desenvolvimento Humano da Fundação Calouste Gulbenkian</small>
+                  <span class="hora"><?=$timeline['4-hour']?></span>
+                  <h4><?=$timeline['4-title']?></h4>
+                  <small><?=$timeline['4-descr']?></small>
                 </div>
                 <div class="arrow"></div>
               </div>
@@ -823,9 +790,9 @@
                   <img src="./images/cronologia/inicio-hackthon.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">15H00</span>
-                  <h4>Início HACKATHON</h4>
-                  <small>Dá tudo o que tens!</small>
+                  <span class="hora"><?= $timeline['5-hour']?></span>
+                  <h4><?= $timeline['5-title']?></h4>
+                  <small><?= $timeline['5-descr']?></small>
                 </div>
                 <div class="arrow"></div>
               </div>
@@ -836,8 +803,8 @@
                   <img src="./images/cronologia/lanche_w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">17H00</span>
-                  <h4>Lanche</h4>
+                  <span class="hora"><?= $timeline['6-hour']?></span>
+                  <h4><?= $timeline['6-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -849,8 +816,8 @@
                   <img src="./images/cronologia/jantar-w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">20H00</span>
-                  <h4>Jantar</h4>
+                  <span class="hora"><?= $timeline['7-hour']?></span>
+                  <h4><?= $timeline['7-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -862,9 +829,9 @@
                   <img src="./images/cronologia/imagem-rita-nogueira-w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">21H30</span>
-                  <h4>Keynote speaker - Ana Rita Nogueira</h4>
-                  <small>Competências interpessoais de comunicação</small>
+                  <span class="hora"><?=  $timeline['8-hour'] ?></span>
+                  <h4><?=  $timeline['8-title'] ?></h4>
+                  <small><?=  $timeline['8-descr'] ?></small>
                 </div>
                 <div class="arrow"></div>
               </div>
@@ -875,8 +842,8 @@
                   <img src="./images/programming.jpg" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">23H30</span>
-                  <h4>Ceia</h4>
+                  <span class="hora"><?= $timeline['9-hour']?></span>
+                  <h4><?= $timeline['9-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -890,8 +857,8 @@
                   <img src="./images/logo-city-hack2019.png" alt="Logo City Hack">
                 </div>
                 <div class="content_info">
-                  <span class="hora">08H30</span>
-                  <h4>Pequeno almoço</h4>
+                  <span class="hora"><?= $timeline['10-hour']?></span>
+                  <h4><?= $timeline['10-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -903,9 +870,9 @@
                   <img src="./images/cronologia/pitches-w.png" alt="Tomar">
                 </div>
                 <div class="content_info">
-                  <span class="hora">10H00</span>
-                  <h4>Pitches</h4>
-                  <small>Primeira avaliação</small>
+                  <span class="hora"><?= $timeline['11-hour']?></span>
+                  <h4><?= $timeline['11-title']?></h4>
+                  <small><?= $timeline['11-descr'] ?></small>
                 </div>
                 <div class="arrow"></div>
             </li>
@@ -915,8 +882,8 @@
                   <img src="./images/cronologia/almoço2_w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">13H30</span>
-                  <h4>Almoço</h4>
+                  <span class="hora"><?= $timeline['12-hour']?></span>
+                  <h4><?=$timeline['12-title'] ?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -928,8 +895,8 @@
                   <img src="./images/cronologia/fim-hackathon_w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">15H00</span>
-                  <h4>Fim HACKATHON</h4>
+                  <span class="hora"><?= $timeline['13-hour']?></span>
+                  <h4><?= $timeline['13-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -941,8 +908,8 @@
                   <img src="./images/programming.jpg" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">15H10</span>
-                  <h4>Apresentação dos 5 finalistas!</h4>
+                  <span class="hora"><?= $timeline['14-hour']?></span>
+                  <h4><?= $timeline['14-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -954,9 +921,9 @@
                   <img src="./images/cronologia/juri_w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">16H00</span>
-                  <h4>Deliberação</h4>
-                  <small>Deliberação do júri e entrega do 1º, 2º e 3º prémios</small>
+                  <span class="hora"><?= $timeline['15-hour']?></span>
+                  <h4><?= $timeline['15-title']?></h4>
+                  <small><?= $timeline['15-descr']?></small>
                 </div>
                 <div class="arrow"></div>
               </div>
@@ -967,8 +934,8 @@
                   <img src="./images/cronologia/fim-evento_w.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
-                  <span class="hora">16H30</span>
-                  <h4>Fim do evento</h4>
+                  <span class="hora"><?= $timeline['16-hour']?></span>
+                  <h4><?= $timeline['16-title']?></h4>
                   <!-- <small>Informação extra...</small> -->
                 </div>
                 <div class="arrow"></div>
@@ -981,8 +948,8 @@
 
     <!-- Implementation -->
     <section id="implementation">
-      <h1 class="background_title" data-aos="fade-up">Implementation</h1>
-      <h2 data-aos="fade-up">A disponibilizar brevemente</h2>
+      <h1 class="background_title" data-aos="fade-up"><?= $title['Implementation'] ?></h1>
+      <h2 data-aos="fade-up"><?= $title['soon'] ?></h2>
     </section>
 
     <!-- Evento anteriores -->
@@ -990,10 +957,10 @@
       <!-- <h1 class="title">Edições Anteriores</h1> -->
       <div class="edition2018">
         <div class="box1">
-          <h1 class="previousEditionsTitle">Edição 2018</h1>
+          <h1 class="previousEditionsTitle"><?= $title['edition18']?></h1>
           <div class="buttons">
-            <!-- <button class="2018gallery">Ver galeria</button> -->
-            <button class="2018teaser">Ver vídeos</button>
+            <!-- <button class="2018gallery"><?= $title['seePictures']?></button> -->
+            <button class="2018teaser"><?= $title['seeVideo']?></button>
           </div>
         </div>
         <div class="box2">
@@ -1001,28 +968,28 @@
           <div class="info_container" data-aos="fade-left">
             <div class="info_box">
               <span class="info_number">20</span>
-              <span class="info_label">equipas</span>
+              <span class="info_label"><?= $title['teams']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">80</span>
-              <span class="info_label">participantes</span>
+              <span class="info_label"><?= $title['part']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">11</span>
-              <span class="info_label">instituições de ensino</span>
+              <span class="info_label"><?= $title['schools']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">10</span>
-              <span class="info_label">áreas de desafio</span>
+              <span class="info_label"><?= $title['areas']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">25%</span>
-              <span class="info_label">sexo femino</span>
+              <span class="info_label"><?= $title['female']?></span>
             </div>
           </div>
           <div class="buttons">
-            <!-- <button class="2018gallery">Ver galeria</button> -->
-            <button class="2018teaser">Ver vídeos</button>
+            <!-- <button class="2018gallery"><?= $title['seePictures']?></button> -->
+            <button class="2018teaser"><?= $title['seeVideo']?></button>
           </div>
         </div>
       </div>
@@ -1031,8 +998,8 @@
         <div class="box1">
           <h1 class="previousEditionsTitle">Edição 2017</h1>
           <div class="buttons">
-            <!-- <button class="2017gallery">Ver galeria</button> -->
-            <button class="2017teaser">Ver vídeos</button>
+            <!-- <button class="2017gallery"><?= $title['seePictures']?></button> -->
+            <button class="2017teaser"><?= $title['seeVideo']?></button>
           </div>
         </div>
         <div class="box2">
@@ -1040,28 +1007,28 @@
           <div class="info_container" data-aos="fade-right">
             <div class="info_box">
               <span class="info_number">16</span>
-              <span class="info_label">equipas</span>
+              <span class="info_label"><?= $title['teams']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">70</span>
-              <span class="info_label">participantes</span>
+              <span class="info_label"><?= $title['part']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">10</span>
-              <span class="info_label">instituições de ensino</span>
+              <span class="info_label"><?= $title['schools']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">6</span>
-              <span class="info_label">áreas de desafio</span>
+              <span class="info_label"><?= $title['areas']?></span>
             </div>
             <div class="info_box">
               <span class="info_number">10%</span>
-              <span class="info_label">sexo femino</span>
+              <span class="info_label"><?= $title['female']?></span>
             </div>
           </div>
           <div class="buttons">
-            <!-- <button class="2017gallery">Ver galeria</button> -->
-            <button class="2017teaser">Ver vídeos</button>
+            <!-- <button class="2017gallery"><?= $title['seePictures']?></button> -->
+            <button class="2017teaser"><?= $title['seeVideo']?></button>
           </div>
         </div>
 
@@ -1072,14 +1039,14 @@
     <section id="partners">
       <div class="wrapper">
         <h1 class="title">
-          Apoio
+          <?= $title['Apoio']?>
         </h1>
         <div class="apoio">
           <img src="./images/logoFundaçãoCG.png" alt="Fundação Calouste Gulbenkian"/>
           <img src="./images/hack-for-good.png" alt="Hack For Good"/>
         </div>
         <h1 class="title">
-          Parceiros
+          <?= $title['Parceiros']?>
         </h1>
         <div class="parcerias">
           <img class="softinsa" src="./images/logotipo_softinsa.png" alt="Softinsa"/>
@@ -1088,7 +1055,7 @@
           <img src="./images/logonext_.png" alt="Next Solution"/>
         </div>
         <h1 class="title">
-          Organização
+          <?= $title['Organização']?>
         </h1>
         <div class="parcerias">
           <img src="./images/logo-ipt.png" alt="IPT"/>
