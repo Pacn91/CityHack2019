@@ -98,71 +98,71 @@ $title['lastPlace'] ='3.<sup>rd</sup>';
 
 $title['watchTeaser'] ='Watch the event Teaser';
 //////////////////////////////////////////////////////////////////////////////////////
-/*
-$title['challenge1'] ='Envelhecimento ativo';
-$subtitle['challenge1-1'] = 'Comunicação e Relações Sociais';
-$content['subtitle-1-1'] = 'Soluções de combate ao isolamento e sedentarismo dos idosos';
-$subtitle['challenge1-2'] = 'Saúde e Bem-Estar';
-$content['subtitle-1-2'] = 'Da digitalização de serviços de saúde ao desenvolvimento de processos de recuperação ou prevenção';
-$subtitle['challenge1-3'] = 'Cuidadores';
-$content['subtitle-1-3'] = 'Tecnologias que tornem os cuidadores de idosos mais eficientes no seu trabalho';
-$subtitle['challenge1-4'] = 'Estimulação Cognitiva';
-$content['subtitle-1-4'] = 'Ferramentas de estimulação cognitiva de forma simples, intuitiva e divertida';
-$subtitle['challenge1-5'] = 'Nutrição';
-$content['subtitle-1-5'] = 'Soluções tecnológicas para manter e controlar uma alimentação saudável adequada a seniores';
-$subtitle['challenge1-6'] = 'Mobilidade';
-$content['subtitle-1-6'] = 'Criação de alternativas viáveis aos transportes públicos para idosos';
-$subtitle['challenge1-7'] = 'Transferência de Conhecimentos';
-$content['subtitle-1-7'] = 'Plataformas para promover o contacto entre jovens e idosos e evitar perda de conhecimentos';
-$subtitle['challenge1-8'] = 'Finanças Pessoais';
-$content['subtitle-1-8'] = 'Soluções mais adequadas de serviços financeiros para idoso';
-$title['challenge2'] = 'Integração dos refugiados e migrantes nas sociedades  de acolhimento';
-$subtitle['challenge2-1'] = 'Integração Cultural';
-$content['subtitle-2-1'] = 'Procura de soluções tecnológicas que contribuam para: uma maior participação na sociedade de acolhimento, aprendizagem da língua da sociedade de acolhimento, aumento dos estímulos à criatividade através das artes e do desporto';
-$subtitle['challenge2-2'] = 'Integração no Mercado de Trabalho';
-$content['subtitle-2-2'] = 'Desenvolvimento de soluções tecnológicas que facilitem a integração no mercado de trabalho da população ativa migrante';
-$title['challenge3'] = 'Bem-estar das crianças e jovens';
-$subtitle['challenge3-1'] = 'Saúde, Bem-Estar e Estilo de Vida Saudáveis';
-$content['subtitle-3-1'] = 'Quais os cuidados prestados a este grupo? Como podemos identificar os distúrbios psicológicos ou perturbações de desenvolvimento? Como incentivar crianças e jovens a implementar boas práticas de nutrição, exercício físico e bem-estar no geral?';
-$subtitle['challenge3-2'] = 'Competências Sociais e Emocionais Como adquirir competências emocionais e sociais?';
-$content['subtitle-3-2'] = 'Aqui procuramos treinar a resiliência, a sociabilidade, o reforço da autoestima e do autocontrolo, a participação e a cidadania, assim como o estímulo à criatividade, artes e desporto';
-$subtitle['challenge3-3'] = 'Parentalidade';
-$content['subtitle-3-3'] = 'Como promover a qualificação dos cuidadores, pais e outros familiares e profissionais? Podemos melhorar as práticas parentais, a capacitação e a monitorização?';
-$subtitle['challenge3-4'] = 'Aprendizagem';
-$content['subtitle-3-4'] = 'É possível facilitar a aprendizagem através da estimulação, motivação e utilização de formas lúdicas e apelativas? Podemos usar ferramentas para escolas e professores, de forma a combate o insucesso, o absentismo e o abandono escolar?';
 
-$title['challenge4'] = 'Pessoas com necessidades especiais';
-$subtitle['challenge4-1'] = 'Comunicações';
-$content['subtitle-4-1'] = 'Soluções tecnológicas que permitam a utilização eficiente de dispositivos pessoais (computadores, tablets e smartphones) por parte de pessoas com necessidades especiais';
-$subtitle['challenge4-2'] = 'Mobilidade';
-$content['subtitle-4-2'] = 'Desenvolvimento de tecnologias que contribuam para o aumento da mobilidade de pessoas com limitações motoras';
-$subtitle['challenge4-3'] = 'Cuidadores';
-$content['subtitle-4-3'] = 'Desenvolvimento de tecnologias que contribuam para o aumento da eficiência dos cuidadores de pessoas com necessidades especiais';
-$subtitle['challenge4-4'] = 'Estimulação Cognitiva';
-$content['subtitle-4-4'] = 'Ferramentas de software simples, amigáveis que ajudem na estimulação cognitiva de pessoas com necessidades especiais (e.g. autismo)';
+$title['challenge1'] ='Active Ageing';
+$subtitle['challenge1-1'] = 'Communication and social relationships';
+$content['subtitle-1-1'] = 'Solutions to prevent loneliness, social isolation and sedentarism in older people.';
+$subtitle['challenge1-2'] = 'Health and well-being';
+$content['subtitle-1-2'] = 'Digitization of healthcare services and development of prevention and rehabilitation processes.';
+$subtitle['challenge1-3'] = 'Caregivers';
+$content['subtitle-1-3'] = 'Technologies to help caregivers being more effective in senior care.';
+$subtitle['challenge1-4'] = 'Cognitive stimulation';
+$content['subtitle-1-4'] = 'Cognitive stimulation tools presented in a simple, intuitive and funny way.';
+$subtitle['challenge1-5'] = 'Nutrition';
+$content['subtitle-1-5'] = 'Technological solutions to help seniors persueing a healthy and proper nutrition.';
+$subtitle['challenge1-6'] = 'Mobility';
+$content['subtitle-1-6'] = 'Designing alternative solutions of public trasports for the eldrely.';
+$subtitle['challenge1-7'] = 'Transfer of knowledge';
+$content['subtitle-1-7'] = 'Platforms to promote connection  between young people and the elderly and to prevent loss of knowledge';
+$subtitle['challenge1-8'] = 'Personal finances';
+$content['subtitle-1-8'] = 'Appropriate financial services for the elderly.';
+$title['challenge2'] = 'Integration of refugees and migrants into host societies';
+$subtitle['challenge2-1'] = 'Cultural integration';
+$content['subtitle-2-1'] = 'Technological solutions that contribute to inclusion  in the host society, such as learning the language of the host society, and stimuli to creativity through arts and sport.';
+$subtitle['challenge2-2'] = 'Integration in the labour market';
+$content['subtitle-2-2'] = 'Development of technological solutions to improve the integration of active migrant population  in the labour market.';
+$title['challenge3'] = 'Wellness of children and youth';
+$subtitle['challenge3-1'] = 'Health, wellness and healthy lifestyle';
+$content['subtitle-3-1'] = 'Which types of care are given to this group? How can we identify psychological disturbances or developing disorders? How to encourage children and youth to implement best practices in nutrition, exercise and wellness overall?';
+$subtitle['challenge3-2'] = 'Social and emotional skills: how to get emotional and social skills?';
+$content['subtitle-3-2'] = 'Design of technological solutions that aim to train resilience, sociability, reinforcement of self-esteem and self-control, participation and citizenship, as well as stimulating creativity through arts and sport.';
+$subtitle['challenge3-3'] = 'Parenting';
+$content['subtitle-3-3'] = 'How to promote the qualification of caregivers, parents and other relatives, and professionals? Can we improve parental practices through training and monitoring?';
+$subtitle['challenge3-4'] = 'Learning';
+$content['subtitle-3-4'] = 'Is it possible to make learning easier by stimulating, motivating and using playful and appealing forms? Can we use tools to help schools and teachers reducing failure, absenteeism, and drop-out?';
 
-
-$title['challenge5'] = 'Transformação sustentada do mercado de trabalho';
-$subtitle['challenge5-1'] = 'Geração de novas formas de trabalho';
-$content['subtitle-5-1'] = 'O crescimento tecnológico veio colocar em risco diversas profissões ameaçando a subsistência de milhões de pessoas. Procura de soluções tecnológicas que contribuam para a geração de novas formas de trabalho, e consequentemente ajudem à transformação sustentada do trabalho';
-$subtitle['challenge5-2'] = 'Conversão de trabalhadores';
-$content['subtitle-5-2'] = 'Pretende-se encontrar propostas de soluções tecnológicas que facilitem a conversão de trabalhadores cujas profissões se encontrem em risco de extinção';
-
-$title['challenge6'] = 'Desenvolvimento sustentável';
-$subtitle['challenge6-1'] = 'Educação da sustentabilidade';
-$content['subtitle-6-1'] = 'Desenvolvimento de tecnologias que permitam a melhoria social e económica das pessoas através de uma melhor utilização dos recursos naturais e energéticos';
-$subtitle['challenge6-2'] = 'Desenvolvimento sustentável da floresta';
-$content['subtitle-6-2'] = 'Procura de soluções de reordenamento da floresta e de soluções sustentáveis de exploração da floresta. Estas propostas devem contribuir para a melhoria das condições de vida das populações através, por exemplo, da prevenção de incêndios ou criação de novos postos de trabalho';
-$subtitle['challenge6-3'] = 'Empreendedorismo sustentável';
-$content['subtitle-6-3'] = 'Proposta de soluções que promovam o desenvolvimento de novos negócios que protejam o ambiente e que promovam o bem-estar social';
+$title['challenge4'] = '4.	People with disabilities';
+$subtitle['challenge4-1'] = 'Communication';
+$content['subtitle-4-1'] = 'Technological solutions to improve the efficient use of personal devices (computers, tablets and smartphones) by people with special needs.';
+$subtitle['challenge4-2'] = 'Mobility';
+$content['subtitle-4-2'] = 'Development of technologies that contribute to increase the mobility of people with motor impairments.';
+$subtitle['challenge4-3'] = 'Caregivers';
+$content['subtitle-4-3'] = 'Development of technologies that contribute to increasing the efficiency of caregivers of people with special needs.';
+$subtitle['challenge4-4'] = 'Cognitive Stimulation';
+$content['subtitle-4-4'] = 'Design of simple, and user-friendly software tools to help the cognitive stimulation of people with special needs (e.g., autism)';
 
 
-$title['challenge7'] = 'Outro (com impacto social)';
-*/
+$title['challenge5'] = 'Sustained transformation of the labor market';
+$subtitle['challenge5-1'] = 'Generating new forms of work';
+$content['subtitle-5-1'] = 'Technological growth has put many professions at risk, threatening the livelihoods of millions of people. Thus we want to search for technological solutions that contribute to the generation of new forms of work, and consequently help the sustained transformation of the labour market.';
+$subtitle['challenge5-2'] = 'Conversion of workers';
+$content['subtitle-5-2'] = 'Development of technological solutions contributing to make easier the conversion of workers whose professions are in danger of extinction.';
+
+$title['challenge6'] = 'Sustainable development ';
+$subtitle['challenge6-1'] = 'Education of sustainability';
+$content['subtitle-6-1'] = 'Development of technologies that promote the social and economic improvement of people, through better use of natural and energy resources.';
+$subtitle['challenge6-2'] = 'Sustainable forest development';
+$content['subtitle-6-2'] = 'Search for solutions of sustainable forest management. These proposals should contribute to improve the life conditions of the population. This can be done, for instance, through the prevention of fires or the creation of new jobs.';
+$subtitle['challenge6-3'] = 'Sustainable Entrepreneurship';
+$content['subtitle-6-3'] = 'Proposal of solutions that promote the development of new businesses that protect the environment and promote social welfare.';
+
+
+$title['challenge7'] = 'Other (with social impact)';
+
 $title['mentors'] = 'Mentors';
 $title['soon'] = 'Available Soon';
 $title['dateideation'] = 'April 30, 2019';
-/*$content['introIdeation'] = 'As sessões de ideação são momentos pensados para ajudar os participantes a alcançarem soluções mais estruturadas para serem desenvolvidos, posteriormente, no decorrer dos hackathons apoiados pela FCG. Estas sessões podem tambem funcionar como momentos de ativação para que mais participantes se inscrevam nos hackathons.';*/
+$content['introIdeation'] = 'Ideation sessions are moments designed to help participants achieve more structured solutions to be developed later in the course of hackathons backed by FCG. These sessions can also act as activation moments for more participants to sign up for hackathons.';
 $title['modelIdeation'] = 'Model:';
 $content['model-1'] = '- Session of 4 Hours - máximo;';
 $content['model-2'] = '- Teams from 3 to 5 people with a ideal number with about 20 people by session;';

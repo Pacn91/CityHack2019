@@ -4,9 +4,10 @@ $default = "pt";
 
 if( isset( $_POST['changeLanguage'] ) )
 {
-$str=str_replace(PHP_EOL,"",str_replace(" ", "", $_POST['changeLanguage']));
-//var_dump(dirname(__FILE__) ."/".substr($str,1,3).".php");die();
-require dirname(__FILE__) ."/".substr($str,1,3).".php";
+$str=substr($_POST['changeLanguage'], -2);
+//$str=str_replace(PHP_EOL,"",str_replace(" ", "", ));
+
+require $str.".php";
 
 setcookie("saveLanguage", $str, time()+3600*24*30, '/'); // cookie, expira em 1 mes
 }

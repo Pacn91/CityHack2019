@@ -845,7 +845,7 @@
             <li>
               <div class="content clearfix">
                 <div class="image">
-                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                  <img src="./images/cronologia/ceia.jpg" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
                   <span class="hora"><?= $timeline['9-hour']?></span>
@@ -860,7 +860,7 @@
             <li>
               <div class="content clearfix">
                 <div class="image">
-                  <img src="./images/logo-city-hack2019.png" alt="Logo City Hack">
+                  <img src="./images/cronologia/peq-almoco.png" alt="Logo City Hack">
                 </div>
                 <div class="content_info">
                   <span class="hora"><?= $timeline['10-hour']?></span>
@@ -911,7 +911,7 @@
             <li>
               <div class="content clearfix">
                 <div class="image">
-                  <img src="./images/programming.jpg" alt="Início Hackathon">
+                  <img src="./images/cronologia/5finalistas.png" alt="Início Hackathon">
                 </div>
                 <div class="content_info">
                   <span class="hora"><?= $timeline['14-hour']?></span>
