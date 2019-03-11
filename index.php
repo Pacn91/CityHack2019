@@ -970,7 +970,7 @@
           </div>
         </div>
         <div class="box2">
-          <h1 class="previousEditionsTitle">Edição 2018</h1>
+          <h1 class="previousEditionsTitle"><?= $title['edition18']?></h1>
           <div class="info_container" data-aos="fade-left">
             <div class="info_box">
               <span class="info_number">20</span>
@@ -1002,14 +1002,14 @@
 
       <div class="edition2017">
         <div class="box1">
-          <h1 class="previousEditionsTitle">Edição 2017</h1>
+          <h1 class="previousEditionsTitle"><?= $title['edition17']?></h1>
           <div class="buttons">
             <!-- <button class="2017gallery"><?= $title['seePictures']?></button> -->
             <button class="2017teaser"><?= $title['seeVideo']?></button>
           </div>
         </div>
         <div class="box2">
-          <h1 class="previousEditionsTitle">Edição 2017</h1>
+          <h1 class="previousEditionsTitle"><?= $title['edition17']?></h1>
           <div class="info_container" data-aos="fade-right">
             <div class="info_box">
               <span class="info_number">16</span>
