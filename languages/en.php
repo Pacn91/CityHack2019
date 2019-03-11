@@ -79,9 +79,9 @@ $content['rule10a']='To answer any questions or to clarify any doubt, participan
 $content['rule10b']='For any additional information or suggestions, please contact cityhack@ipt.pt, or ';
 $title['openInscriptions']='Open Registrations';
 $title['limitDate']='until April 26, 2019';
-$title['mainSupport']='Main Support';
+$title['mainSupport']='Main Sponsor';
 $title['cityhackLocal']='Complexo da Levada, May 11 and 12, 2019';
-$content['intro'] ='The Polytechnic Institute of Tomar and the Municipality of Tomar with the support of the Calouste Gulbenkian Foundation announce the 3rd edition of the CityHack Project * - The city as a social platform.';
+$content['intro'] ='The Polytechnic Institute of Tomar and the Municipality of Tomar with the sponsor of the Calouste Gulbenkian Foundation announce the 3rd edition of the CityHack Project * - The city as a social platform.';
 $content['description-1'] ='CityHack is a 24-hour marathon event aimed at developing technology solutions for the cities. The 2019 edition is dedicated to find solutions to challenges with social impact. The event is highly supported by the Calouste Gulbenkian Foundation within the scope of the Hack for Good Project, which is part of the Gulbenkian program for Cohesion and Social Integration.';
 $content['description-2'] ='The candidate teams may include 3 to 6 students of Universities or Polytechnic Institutes, in which at least two of them must be from technological courses.';
 $content['description-3'] ='The team may include two elements that do not attend higher education.';
@@ -92,9 +92,9 @@ $content['trademark'] = '* CityHack is a registered trademark of the Polytechnic
 $money['nd'] ='1000€';
 $title['secondPlace'] ='2.<sup>nd</sup> award';
 $money['st'] ='2000€';
-$title['firstPlace'] ='1.<sup>st</sup>';
+$title['firstPlace'] ='1.<sup>st</sup> award';
 $money['rd'] ='500€';
-$title['lastPlace'] ='3.<sup>rd</sup>';
+$title['lastPlace'] ='3.<sup>rd</sup> award';
 
 $title['watchTeaser'] ='Watch the event Teaser';
 //////////////////////////////////////////////////////////////////////////////////////
@@ -251,7 +251,7 @@ $title['part'] = 'participants';
 $title['schools'] = 'educational institutions';
 $title['areas'] = 'challenge areas';
 $title['female'] = 'female sex';
-$title['Apoio'] = 'Support';
+$title['Apoio'] = 'Sponsor';
 $title['Parceiros'] = 'Partners';
 $title['Organização'] = 'Organization';
 ?>

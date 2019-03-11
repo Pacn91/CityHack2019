@@ -336,7 +336,7 @@
     <!-- Prémios -->
     <section id="prizes">
       <div class="wrapper">
-        <h1 class="title" data-aos="fade-up">Prémios</h1>
+        <h1 class="title" data-aos="fade-up"><?= $title['Prémios']?></h1>
         <div class="awards">
           <div class="awards_container left">
             <div class="secondPlace" data-aos="zoom-in" data-aos-delay="200">
