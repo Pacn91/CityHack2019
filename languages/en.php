@@ -1,4 +1,5 @@
 <?php
+$url['imageTop'] = "./images/grafismo-topo-site-cityhack-EN.png";
 $title['edition19'] = '2019 Edition';
 $title['edition18'] = '2018 Edition';
 $title['edition17'] = '2017 Edition';

@@ -288,7 +288,7 @@
         </a>
       </div>
       <div class="grafismo" data-aos="fade-up" data-aos-delay="200">
-        <img class="logo_cityhack" src="./images/grafismo-topo-site-cityhack.png" alt="Grafismo CityHack" />
+        <img class="logo_cityhack" src="<?= $url['imageTop']?>" alt="Grafismo CityHack" />
       </div>
 
       <div class="apoio">
