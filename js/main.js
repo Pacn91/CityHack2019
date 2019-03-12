@@ -22,10 +22,10 @@ $( document ).ready(function() {
     if (!$('#navbar').hasClass('mobile')){
       if ($(document).scrollTop() > 50) {
         $('#navbar').addClass('with-background');
-        $("#navbar_logo").attr("src","./images/logo-cityhack-preto.png");
+        $("#navbar_logo").attr("src","/images/logo-cityhack-preto.png");
       } else {
         $('#navbar').removeClass('with-background');
-        $("#navbar_logo").attr("src","./images/logo-cityhack-branco.png");
+        $("#navbar_logo").attr("src","/images/logo-cityhack-branco.png");
       }
     }
   });
@@ -53,12 +53,12 @@ function showMenu(){
     $('#navbar').toggleClass('mobile');
 
     if ($('.menu_toggle').hasClass('is-clicked')){
-      $("#navbar_logo").attr("src","./images/logo-cityhack-preto.png");
+      $("#navbar_logo").attr("src","/images/logo-cityhack-preto.png");
     } else {
       if ($(document).scrollTop() > 50) {
-        $("#navbar_logo").attr("src","./images/logo-cityhack-preto.png");
+        $("#navbar_logo").attr("src","/images/logo-cityhack-preto.png");
       } else {
-        $("#navbar_logo").attr("src","./images/logo-cityhack-branco.png");
+        $("#navbar_logo").attr("src","/images/logo-cityhack-branco.png");
       }
     }
   });
@@ -67,10 +67,10 @@ function showMenu(){
 function checkScrollFromTop(){
   if ($(document).scrollTop() > 50) {
     $('#navbar').addClass('with-background');
-    $("#navbar_logo").attr("src","./images/logo-cityhack-preto.png");
+    $("#navbar_logo").attr("src","/images/logo-cityhack-preto.png");
   } else {
     $('#navbar').removeClass('with-background');
-    $("#navbar_logo").attr("src","./images/logo-cityhack-branco.png");
+    $("#navbar_logo").attr("src","/images/logo-cityhack-branco.png");
   }
 }
 
@@ -105,81 +105,81 @@ function openFancyBoxes(){
   $('.2018gallery').on('click', function() {
     $.fancybox.open([
       {
-        src  : './images/cityhack2018/1.jpg',
+        src  : '/images/cityhack2018/1.jpg',
         opts : {
-          thumb   : './images/cityhack2018/1.jpg'
+          thumb   : '/images/cityhack2018/1.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/2.jpg',
+        src  : '/images/cityhack2018/2.jpg',
         opts : {
-          thumb   : './images/cityhack2018/2.jpg'
+          thumb   : '/images/cityhack2018/2.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/3.jpg',
+        src  : '/images/cityhack2018/3.jpg',
         opts : {
-          thumb   : './images/cityhack2018/3.jpg'
+          thumb   : '/images/cityhack2018/3.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/4.jpg',
+        src  : '/images/cityhack2018/4.jpg',
         opts : {
-          thumb   : './images/cityhack2018/4.jpg'
+          thumb   : '/images/cityhack2018/4.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/5.jpg',
+        src  : '/images/cityhack2018/5.jpg',
         opts : {
-          thumb   : './images/cityhack2018/5.jpg'
+          thumb   : '/images/cityhack2018/5.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/6.jpg',
+        src  : '/images/cityhack2018/6.jpg',
         opts : {
-          thumb   : './images/cityhack2018/6.jpg'
+          thumb   : '/images/cityhack2018/6.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/7.jpg',
+        src  : '/images/cityhack2018/7.jpg',
         opts : {
-          thumb   : './images/cityhack2018/7.jpg'
+          thumb   : '/images/cityhack2018/7.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/8.jpg',
+        src  : '/images/cityhack2018/8.jpg',
         opts : {
-          thumb   : './images/cityhack2018/8.jpg'
+          thumb   : '/images/cityhack2018/8.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/9.jpg',
+        src  : '/images/cityhack2018/9.jpg',
         opts : {
-          thumb   : './images/cityhack2018/9.jpg'
+          thumb   : '/images/cityhack2018/9.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/10.jpg',
+        src  : '/images/cityhack2018/10.jpg',
         opts : {
-          thumb   : './images/cityhack2018/10.jpg'
+          thumb   : '/images/cityhack2018/10.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/11.jpg',
+        src  : '/images/cityhack2018/11.jpg',
         opts : {
-          thumb   : './images/cityhack2018/11.jpg'
+          thumb   : '/images/cityhack2018/11.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/12.jpg',
+        src  : '/images/cityhack2018/12.jpg',
         opts : {
-          thumb   : './images/cityhack2018/12.jpg'
+          thumb   : '/images/cityhack2018/12.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/13.jpg',
+        src  : '/images/cityhack2018/13.jpg',
         opts : {
-          thumb   : './images/cityhack2018/13.jpg'
+          thumb   : '/images/cityhack2018/13.jpg'
         }
       },
     ], {
@@ -194,81 +194,81 @@ function openFancyBoxes(){
   $('.2017gallery').on('click', function() {
     $.fancybox.open([
       {
-        src  : './images/cityhack2018/1.jpg',
+        src  : '/images/cityhack2018/1.jpg',
         opts : {
-          thumb   : './images/cityhack2018/1.jpg'
+          thumb   : '/images/cityhack2018/1.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/2.jpg',
+        src  : '/images/cityhack2018/2.jpg',
         opts : {
-          thumb   : './images/cityhack2018/2.jpg'
+          thumb   : '/images/cityhack2018/2.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/3.jpg',
+        src  : '/images/cityhack2018/3.jpg',
         opts : {
-          thumb   : './images/cityhack2018/3.jpg'
+          thumb   : '/images/cityhack2018/3.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/4.jpg',
+        src  : '/images/cityhack2018/4.jpg',
         opts : {
-          thumb   : './images/cityhack2018/4.jpg'
+          thumb   : '/images/cityhack2018/4.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/5.jpg',
+        src  : '/images/cityhack2018/5.jpg',
         opts : {
-          thumb   : './images/cityhack2018/5.jpg'
+          thumb   : '/images/cityhack2018/5.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/6.jpg',
+        src  : '/images/cityhack2018/6.jpg',
         opts : {
-          thumb   : './images/cityhack2018/6.jpg'
+          thumb   : '/images/cityhack2018/6.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/7.jpg',
+        src  : '/images/cityhack2018/7.jpg',
         opts : {
-          thumb   : './images/cityhack2018/7.jpg'
+          thumb   : '/images/cityhack2018/7.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/8.jpg',
+        src  : '/images/cityhack2018/8.jpg',
         opts : {
-          thumb   : './images/cityhack2018/8.jpg'
+          thumb   : '/images/cityhack2018/8.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/9.jpg',
+        src  : '/images/cityhack2018/9.jpg',
         opts : {
-          thumb   : './images/cityhack2018/9.jpg'
+          thumb   : '/images/cityhack2018/9.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/10.jpg',
+        src  : '/images/cityhack2018/10.jpg',
         opts : {
-          thumb   : './images/cityhack2018/10.jpg'
+          thumb   : '/images/cityhack2018/10.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/11.jpg',
+        src  : '/images/cityhack2018/11.jpg',
         opts : {
-          thumb   : './images/cityhack2018/11.jpg'
+          thumb   : '/images/cityhack2018/11.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/12.jpg',
+        src  : '/images/cityhack2018/12.jpg',
         opts : {
-          thumb   : './images/cityhack2018/12.jpg'
+          thumb   : '/images/cityhack2018/12.jpg'
         }
       },
       {
-        src  : './images/cityhack2018/13.jpg',
+        src  : '/images/cityhack2018/13.jpg',
         opts : {
-          thumb   : './images/cityhack2018/13.jpg'
+          thumb   : '/images/cityhack2018/13.jpg'
         }
       },
     ],{
